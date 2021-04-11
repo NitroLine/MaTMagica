@@ -13,13 +13,15 @@ namespace ClearSky
         private int direction = 1;
         bool isJumping = false;
         private bool alive = true;
-
+        public Camera cam;
+        private Transform camTransform;
 
         // Start is called before the first frame update
         void Start()
         {
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
+            camTransform = cam.GetComponent<Transform>();
         }
 
         private void Update()
@@ -32,8 +34,8 @@ namespace ClearSky
                 Attack();
                 Jump();
                 Run();
-
             }
+            camTransform.position = new Vector3(rb.transform.position.x,rb.transform.position.y,-10);
         }
         private void OnTriggerEnter2D(Collider2D other)
         {
