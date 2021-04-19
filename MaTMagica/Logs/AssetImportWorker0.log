@@ -1,10 +1,10 @@
 Using pre-set license
-Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.867; Version 2009; 64bit' Language: 'ru' Physical Memory: 16235 MB
+Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.928; Version 2009; 64bit' Language: 'ru' Physical Memory: 16235 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.4f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -15,14 +15,14 @@ C:/Users/miner/OneDrive/Desktop/Docs/urfu/CSharp/game/MaTMagica/MaTMagica
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57212
+55258
 Successfully changed project path to: C:/Users/miner/OneDrive/Desktop/Docs/urfu/CSharp/game/MaTMagica/MaTMagica
 C:/Users/miner/OneDrive/Desktop/Docs/urfu/CSharp/game/MaTMagica/MaTMagica
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 41.42 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 58.03 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.0f1 (c7b5465681fb)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
+Initialize engine version: 2020.3.4f1 (0abb6314276a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/miner/OneDrive/Desktop/Docs/urfu/CSharp/game/MaTMagica/MaTMagica/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
@@ -30,594 +30,1000 @@ Direct3D:
     Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c92)
     Vendor:   
     VRAM:     1979 MB
-    Driver:   27.21.14.6172
+    Driver:   27.21.14.6611
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003186 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005676 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 37.60 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 40.92 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.261 seconds
+- Completed reload, in  1.326 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001679 seconds.
+Registered in 0.002240 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 53.50 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 48.52 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.372 seconds
+- Completed reload, in  1.181 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.4 MB.
+System memory in use after: 85.3 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2259.
+Total: 2.885400 ms (FindLiveObjects: 0.424900 ms CreateObjectMapping: 0.096300 ms MarkObjects: 2.228500 ms  DeleteObjects: 0.134000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/MAGIC/Magic.prefab
+  artifactKey: Guid(ec0f595864ffa694db2e1416d52c4e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MAGIC/Magic.prefab using Guid(ec0f595864ffa694db2e1416d52c4e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a23ad2bea42c8ca1a5fb69bced718f6') in 0.180701 seconds
+  Import took 0.183695 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002297 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.159 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.4 MB.
+System memory in use after: 88.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2271.
+Total: 2.282500 ms (FindLiveObjects: 0.359800 ms CreateObjectMapping: 0.087000 ms MarkObjects: 1.724000 ms  DeleteObjects: 0.110100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002852 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.992 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.5 MB.
+System memory in use after: 88.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2275.
+Total: 3.022700 ms (FindLiveObjects: 0.239900 ms CreateObjectMapping: 0.173600 ms MarkObjects: 2.419300 ms  DeleteObjects: 0.188800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 98.609525 seconds.
+  path: Assets/MAGIC/MagicBook.cs
+  artifactKey: Guid(feac80d0eed8421419fcc2b011661b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MAGIC/MagicBook.cs using Guid(feac80d0eed8421419fcc2b011661b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a937020f14fa5d3545f75dcc79aafe40') in 0.015499 seconds
+  Import took 0.019183 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001067 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.460 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 85.1 MB.
-System memory in use after: 85.0 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2256.
-Total: 5.051600 ms (FindLiveObjects: 0.683200 ms CreateObjectMapping: 0.078600 ms MarkObjects: 4.119800 ms  DeleteObjects: 0.168500 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Wizard - 2D Character/Demo/Wizard Variant.prefab
-  artifactKey: Guid(904d0b8c28276a64c8101ddedd894d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Wizard - 2D Character/Demo/Wizard Variant.prefab using Guid(904d0b8c28276a64c8101ddedd894d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04adba37b5dd8d4087813e17b4e5fcf6') in 0.156048 seconds
-  Import took 0.159962 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001009 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.104 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.2 MB.
-System memory in use after: 88.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2267.
-Total: 3.727900 ms (FindLiveObjects: 0.603500 ms CreateObjectMapping: 0.293800 ms MarkObjects: 2.727300 ms  DeleteObjects: 0.101600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 622.919017 seconds.
-  path: Assets/Camera
-  artifactKey: Guid(0b74afa6666dfec4b92fd2df4659a316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Camera using Guid(0b74afa6666dfec4b92fd2df4659a316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3de452dd8d857f48aec79bf368c518d0') in 0.007731 seconds
-  Import took 0.011816 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.175482 seconds.
-  path: Assets/Camera/CameraController.cs
-  artifactKey: Guid(e1f5523df4844e345b75663d41a69883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Camera/CameraController.cs using Guid(e1f5523df4844e345b75663d41a69883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12737fa2b2d8d40cea2fc120036cc63') in 0.012899 seconds
-  Import took 0.016610 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002098 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.048 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.2 MB.
-System memory in use after: 88.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2272.
-Total: 2.393500 ms (FindLiveObjects: 0.284600 ms CreateObjectMapping: 0.119800 ms MarkObjects: 1.889000 ms  DeleteObjects: 0.098600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001108 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.975 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.2 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2276.
-Total: 2.394500 ms (FindLiveObjects: 0.254600 ms CreateObjectMapping: 0.104700 ms MarkObjects: 1.935500 ms  DeleteObjects: 0.098000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001010 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.913 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
+System memory in use before: 88.5 MB.
+System memory in use after: 88.5 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2280.
-Total: 2.434000 ms (FindLiveObjects: 0.284100 ms CreateObjectMapping: 0.101700 ms MarkObjects: 1.949200 ms  DeleteObjects: 0.097700 ms)
+Total: 2.414300 ms (FindLiveObjects: 0.276400 ms CreateObjectMapping: 0.111000 ms MarkObjects: 1.859500 ms  DeleteObjects: 0.166000 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001363 seconds.
+Registered in 0.001421 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.826 seconds
+- Completed reload, in  1.026 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.5 MB.
+System memory in use after: 88.5 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2284.
-Total: 2.749700 ms (FindLiveObjects: 0.310000 ms CreateObjectMapping: 0.159900 ms MarkObjects: 2.176700 ms  DeleteObjects: 0.101700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002093 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.920 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2288.
-Total: 3.817500 ms (FindLiveObjects: 0.351800 ms CreateObjectMapping: 0.183700 ms MarkObjects: 3.162200 ms  DeleteObjects: 0.118500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001302 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.959 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2292.
-Total: 2.113100 ms (FindLiveObjects: 0.288700 ms CreateObjectMapping: 0.092300 ms MarkObjects: 1.629900 ms  DeleteObjects: 0.100900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001028 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.019 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2296.
-Total: 3.843700 ms (FindLiveObjects: 0.407300 ms CreateObjectMapping: 0.139200 ms MarkObjects: 3.141600 ms  DeleteObjects: 0.153600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001363 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.320 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.56 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2300.
-Total: 2.414600 ms (FindLiveObjects: 0.314700 ms CreateObjectMapping: 0.106200 ms MarkObjects: 1.887000 ms  DeleteObjects: 0.105100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001588 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.976 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2304.
-Total: 3.203400 ms (FindLiveObjects: 0.325500 ms CreateObjectMapping: 0.105800 ms MarkObjects: 2.569300 ms  DeleteObjects: 0.200800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003060 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.746 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.4 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2308.
-Total: 4.137800 ms (FindLiveObjects: 0.428200 ms CreateObjectMapping: 0.260100 ms MarkObjects: 3.251300 ms  DeleteObjects: 0.196400 ms)
+Total: 2.267900 ms (FindLiveObjects: 0.281900 ms CreateObjectMapping: 0.113500 ms MarkObjects: 1.765500 ms  DeleteObjects: 0.105800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2014.431070 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Bushes_0.prefab
-  artifactKey: Guid(912a5636d8fc1784a9dbcaea5b6943ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Bushes_0.prefab using Guid(912a5636d8fc1784a9dbcaea5b6943ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e7730fa5eb6ea479727ae935c5c0205') in 0.103200 seconds
-  Import took 0.107164 seconds .
+  Time since last request: 364.895841 seconds.
+  path: Assets/MAGIC/MagicBook.cs
+  artifactKey: Guid(feac80d0eed8421419fcc2b011661b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MAGIC/MagicBook.cs using Guid(feac80d0eed8421419fcc2b011661b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c342773dd84a8ad32238d817a95e4206') in 0.004403 seconds
+  Import took 0.008107 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Clouds_2.prefab
-  artifactKey: Guid(dc5d786f80d350c4290319f55451c0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Clouds_2.prefab using Guid(dc5d786f80d350c4290319f55451c0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f2ef56df22cf54929af94d7c8abb9a') in 0.021534 seconds
-  Import took 0.025464 seconds .
+  Time since last request: 41.736133 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 1.png
+  artifactKey: Guid(b70eac4e50420dd4eb48c5de56a34654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 1.png using Guid(b70eac4e50420dd4eb48c5de56a34654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da52996b243656b83d2f93559ec0c9a4') in 0.139628 seconds
+  Import took 0.143496 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Bushes_10.prefab
-  artifactKey: Guid(ea894a5952703264198cca5d0f05ac58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Bushes_10.prefab using Guid(ea894a5952703264198cca5d0f05ac58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f90ebaf8922adae7bdd7f8ca1b92104d') in 0.016168 seconds
-  Import took 0.019258 seconds .
+  Time since last request: 0.000371 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 4.png
+  artifactKey: Guid(074bb08c9ce3fd14e9d31057a8d5e221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 4.png using Guid(074bb08c9ce3fd14e9d31057a8d5e221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03aa2f8b6f4aae06d9b6d174ffd4f192') in 0.021248 seconds
+  Import took 0.025796 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Bushes_12.prefab
-  artifactKey: Guid(3903b3ab092a3584980d6227cb2d7e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Bushes_12.prefab using Guid(3903b3ab092a3584980d6227cb2d7e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb790b235699eb81c3d29a09bba345b4') in 0.017343 seconds
-  Import took 0.023408 seconds .
+  Time since last request: 0.000242 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 3.png
+  artifactKey: Guid(f917bb8973856624cbda9216c06db593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 3.png using Guid(f917bb8973856624cbda9216c06db593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1db2bc88c3cafba980bffd1b77b85476') in 0.019561 seconds
+  Import took 0.024227 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000666 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Grass_1.prefab
-  artifactKey: Guid(1388df4395c60b74b93fa853e7a26993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Grass_1.prefab using Guid(1388df4395c60b74b93fa853e7a26993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5243c352a3b318ead0367403b350487b') in 0.020599 seconds
-  Import took 0.044331 seconds .
+  Time since last request: 0.000273 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 2.png
+  artifactKey: Guid(9b181254db9c4a845b79e51ff6e69752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 2.png using Guid(9b181254db9c4a845b79e51ff6e69752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '213f10a7999316c5f9f384f3316cac9c') in 0.017352 seconds
+  Import took 0.021038 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Knight.prefab
-  artifactKey: Guid(ed18ae643e6150e48a215de290a44235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Knight.prefab using Guid(ed18ae643e6150e48a215de290a44235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a340a51b0015d021d1017de94619f470') in 0.043248 seconds
-  Import took 0.046799 seconds .
+  Time since last request: 0.011419 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 3.png
+  artifactKey: Guid(f917bb8973856624cbda9216c06db593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 3.png using Guid(f917bb8973856624cbda9216c06db593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1db2bc88c3cafba980bffd1b77b85476') in 0.011980 seconds
+  Import took 0.016366 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Bushes_1.prefab
-  artifactKey: Guid(781ff537a86bbe941b79285dfac91178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Bushes_1.prefab using Guid(781ff537a86bbe941b79285dfac91178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '618eab8d9d9b2a38abb521020a8ffaf5') in 0.015226 seconds
-  Import took 0.018066 seconds .
+  Time since last request: 0.115965 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 5.png
+  artifactKey: Guid(2a15326299f70fc4ca7ce065a3706fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 5.png using Guid(2a15326299f70fc4ca7ce065a3706fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c00c1d30b8f781158cd7d75b912da4d') in 0.019095 seconds
+  Import took 0.023529 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Mountains.prefab
-  artifactKey: Guid(628aa1da3b0e9bd42936e033c58f35f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Mountains.prefab using Guid(628aa1da3b0e9bd42936e033c58f35f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31d620fdc78f51a8f335063f14ff6ee4') in 0.025212 seconds
-  Import took 0.029301 seconds .
+  Time since last request: 0.005291 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 5.png
+  artifactKey: Guid(2a15326299f70fc4ca7ce065a3706fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/big plant 5.png using Guid(2a15326299f70fc4ca7ce065a3706fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c00c1d30b8f781158cd7d75b912da4d') in 0.014464 seconds
+  Import took 0.018559 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Bushes_2.prefab
-  artifactKey: Guid(ea658ab4c1768e34ca85cf1ca1042490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Bushes_2.prefab using Guid(ea658ab4c1768e34ca85cf1ca1042490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b7bd960c70e31e8aedb925da2b0c85') in 0.014088 seconds
-  Import took 0.018071 seconds .
+  Time since last request: 0.818700 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/center.png
+  artifactKey: Guid(07562a25118bc20418995f6cfa590397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/center.png using Guid(07562a25118bc20418995f6cfa590397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaec2ce66bd73e9b2d9dc8d376a33e82') in 0.027440 seconds
+  Import took 0.032250 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Grass_4.prefab
-  artifactKey: Guid(581354f50ef97d242b5bb070e811f94e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Grass_4.prefab using Guid(581354f50ef97d242b5bb070e811f94e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5600cf05a2236550b4e29125cd05026') in 0.015303 seconds
-  Import took 0.018658 seconds .
+  Time since last request: 0.000275 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/center left.png
+  artifactKey: Guid(6ce0b57cdadc6524080b8f31412dadf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/center left.png using Guid(6ce0b57cdadc6524080b8f31412dadf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09976b57e735c67009c047ce30a87a21') in 0.019864 seconds
+  Import took 0.024082 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Cart.prefab
-  artifactKey: Guid(21b857671bfb7e44c8d95e09c536abda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Cart.prefab using Guid(21b857671bfb7e44c8d95e09c536abda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b12bde7c5bd86ebd87f16d2620b81c2e') in 0.024606 seconds
-  Import took 0.028934 seconds .
+  Time since last request: 0.000197 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/center_grass.png
+  artifactKey: Guid(bc415c45a4e1a234fa893038db69fe49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/center_grass.png using Guid(bc415c45a4e1a234fa893038db69fe49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83d28a24d76c1f04a4c89c722f82254a') in 0.029608 seconds
+  Import took 0.034104 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Bushes_13.prefab
-  artifactKey: Guid(900544f289a6c68429b69f8b259d2a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Bushes_13.prefab using Guid(900544f289a6c68429b69f8b259d2a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a2b166a9824afa4d55df3b00af05943') in 0.013924 seconds
-  Import took 0.017160 seconds .
+  Time since last request: 0.000367 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/center right.png
+  artifactKey: Guid(ec03b7e46f926294e8204be0f885ada3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/center right.png using Guid(ec03b7e46f926294e8204be0f885ada3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1c8afe994115cbd9138906041cd714') in 0.029032 seconds
+  Import took 0.037251 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Grass_8.prefab
-  artifactKey: Guid(a47e02929718292409ca84e71b71e21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Grass_8.prefab using Guid(a47e02929718292409ca84e71b71e21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ee12e7750d0ddfb257a8664d7b5f567') in 0.011922 seconds
-  Import took 0.015930 seconds .
+  Time since last request: 6.122393 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_1.png
+  artifactKey: Guid(71e7ce5aed1b5234fbc90172197f5d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_1.png using Guid(71e7ce5aed1b5234fbc90172197f5d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc7a842d94a7d8a9b0adb2082f6d41bb') in 0.037983 seconds
+  Import took 0.041656 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Bushes_9.prefab
-  artifactKey: Guid(ffcc6d3286a9f5f43885906f8a3e26d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Bushes_9.prefab using Guid(ffcc6d3286a9f5f43885906f8a3e26d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8861af750991a2d0b20c1724a60c2ca2') in 0.014757 seconds
-  Import took 0.018675 seconds .
+  Time since last request: 0.000269 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_2.png
+  artifactKey: Guid(f4d2095ace427f44283d5fb49eed6cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_2.png using Guid(f4d2095ace427f44283d5fb49eed6cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab5151b9c25ae0ba24ffb022554ece2') in 0.026245 seconds
+  Import took 0.031174 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Bushes_3.prefab
-  artifactKey: Guid(ed27da27248810b459d89cde5821635c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Bushes_3.prefab using Guid(ed27da27248810b459d89cde5821635c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa113dabb4a7cc29417cb54f387bc1bc') in 0.018579 seconds
-  Import took 0.022288 seconds .
+  Time since last request: 0.000344 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_1.png
+  artifactKey: Guid(71e7ce5aed1b5234fbc90172197f5d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_1.png using Guid(71e7ce5aed1b5234fbc90172197f5d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc7a842d94a7d8a9b0adb2082f6d41bb') in 0.022726 seconds
+  Import took 0.026481 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Clouds_4.prefab
-  artifactKey: Guid(c262fa067521aaa4f8c24c256b35d736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Clouds_4.prefab using Guid(c262fa067521aaa4f8c24c256b35d736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9668de90662ee6ce0d087cdb17605d4') in 0.011280 seconds
-  Import took 0.015091 seconds .
+  Time since last request: 0.000262 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_2.png
+  artifactKey: Guid(f4d2095ace427f44283d5fb49eed6cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_2.png using Guid(f4d2095ace427f44283d5fb49eed6cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab5151b9c25ae0ba24ffb022554ece2') in 0.030652 seconds
+  Import took 0.034011 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000381 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Grass_0.prefab
-  artifactKey: Guid(ffba37ecbd0ecdb408ca3ae0b93ef4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Grass_0.prefab using Guid(ffba37ecbd0ecdb408ca3ae0b93ef4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49cf95497fd44daf98a7cddc838f1264') in 0.009420 seconds
-  Import took 0.014444 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Grass_3.prefab
-  artifactKey: Guid(806b0901dfc7c494180859edb2083501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Grass_3.prefab using Guid(806b0901dfc7c494180859edb2083501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0783109ea91d80aa5d5ee52f29acdce0') in 0.012608 seconds
-  Import took 0.016131 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000482 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Grass_2.prefab
-  artifactKey: Guid(d5a7f1e685dfe2a46864c10baaf7e5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Grass_2.prefab using Guid(d5a7f1e685dfe2a46864c10baaf7e5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d9a86438688789183d240270a982b15') in 0.010206 seconds
-  Import took 0.015346 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Grass_5.prefab
-  artifactKey: Guid(6ac3d52b9887b2f4f8a7bdde2eb63865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Grass_5.prefab using Guid(6ac3d52b9887b2f4f8a7bdde2eb63865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '995f181b0b7883743870094ed4e9dd84') in 0.011574 seconds
-  Import took 0.015248 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Clouds_0.prefab
-  artifactKey: Guid(fe505efdebb13be4ba193ee1a4bd870f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Clouds_0.prefab using Guid(fe505efdebb13be4ba193ee1a4bd870f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e66aa2d2ca2dad857aaf4370a1c47e99') in 0.013193 seconds
-  Import took 0.017646 seconds .
+  Time since last request: 0.000211 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_3.png
+  artifactKey: Guid(cbe8eaa032a752d43ba9efb1a9c9b32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_3.png using Guid(cbe8eaa032a752d43ba9efb1a9c9b32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb40fa43c92bd267d18e0cd71cc90958') in 0.025750 seconds
+  Import took 0.029595 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000219 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Bushes_6.prefab
-  artifactKey: Guid(9bdb7c8573ac7fe4f999995067d559e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Bushes_6.prefab using Guid(9bdb7c8573ac7fe4f999995067d559e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83af59e492c63a49ec77b18605f7b7a3') in 0.013722 seconds
-  Import took 0.018949 seconds .
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_4.png
+  artifactKey: Guid(497b0a85226a1e645a20f09d8a7acfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_4.png using Guid(497b0a85226a1e645a20f09d8a7acfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec2d9335a261ff6bee97f51657e7f79') in 0.030347 seconds
+  Import took 0.033767 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000424 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Bushes_7.prefab
-  artifactKey: Guid(d6f8a10e9ce4308418b967e7c6d9911b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Bushes_7.prefab using Guid(d6f8a10e9ce4308418b967e7c6d9911b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72cbbbb2971e53539fd4baa1ca121453') in 0.013077 seconds
-  Import took 0.018437 seconds .
+  Time since last request: 0.000228 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_5.png
+  artifactKey: Guid(0d5a0839c54cdba4a91b6f9d32a7498a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Clouds NIght_5.png using Guid(0d5a0839c54cdba4a91b6f9d32a7498a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12570e6b2f0cfb606058d82b7979071c') in 0.033288 seconds
+  Import took 0.037204 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Grass_9.prefab
-  artifactKey: Guid(8a073d6734cd682499370aa186b63170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Grass_9.prefab using Guid(8a073d6734cd682499370aa186b63170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff2fcf1740edfb6daf40520fb15e2ff') in 0.009012 seconds
-  Import took 0.013731 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Grass_7.prefab
-  artifactKey: Guid(5e50b53eac2999d4a89fdc44a9ed2ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Grass_7.prefab using Guid(5e50b53eac2999d4a89fdc44a9ed2ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bb2fc9b14fd250e49b12316069d18f1') in 0.012373 seconds
-  Import took 0.017606 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Clouds_1.prefab
-  artifactKey: Guid(cd61558369ce0144497ce67df4873ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Clouds_1.prefab using Guid(cd61558369ce0144497ce67df4873ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8765101eb24ac64b9e15c61e5793a0dd') in 0.010525 seconds
-  Import took 0.015185 seconds .
+  Time since last request: 0.155674 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/down.png
+  artifactKey: Guid(f7f944a160e863444bf7522c3dd1d80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/down.png using Guid(f7f944a160e863444bf7522c3dd1d80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83081d142760a1af95b75de179a72fd8') in 0.024478 seconds
+  Import took 0.030721 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000200 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Bushes_4.prefab
-  artifactKey: Guid(62bcf74498a882744bb53df5303b2c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Bushes_4.prefab using Guid(62bcf74498a882744bb53df5303b2c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25012ad53a0a5163f50647be731ce3a') in 0.015667 seconds
-  Import took 0.020138 seconds .
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/grass1.png
+  artifactKey: Guid(e088121068c913d4cb7c535392652bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/grass1.png using Guid(e088121068c913d4cb7c535392652bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea6ceefc20e498b5a7225af94630e28') in 0.023165 seconds
+  Import took 0.027481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/down.png
+  artifactKey: Guid(f7f944a160e863444bf7522c3dd1d80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/down.png using Guid(f7f944a160e863444bf7522c3dd1d80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83081d142760a1af95b75de179a72fd8') in 0.022891 seconds
+  Import took 0.027547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/grass1.png
+  artifactKey: Guid(e088121068c913d4cb7c535392652bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/grass1.png using Guid(e088121068c913d4cb7c535392652bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea6ceefc20e498b5a7225af94630e28') in 0.011890 seconds
+  Import took 0.015821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.783075 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/left corner .png
+  artifactKey: Guid(c0ce7c61bf5962142ba7f0297180d613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/left corner .png using Guid(c0ce7c61bf5962142ba7f0297180d613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f1d276ab6b8cce7b8ec4c60bb014301') in 0.049753 seconds
+  Import took 0.054754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.055588 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/left_grass.png
+  artifactKey: Guid(8b45ef358ffa6994db1f9d70cc27e29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/left_grass.png using Guid(8b45ef358ffa6994db1f9d70cc27e29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ec1514fe1719c53282db0f2bc3afbc0') in 0.022609 seconds
+  Import took 0.029250 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000212 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Clouds_3.prefab
-  artifactKey: Guid(2f7f5ffb133574f40a9060d421bd4f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Clouds_3.prefab using Guid(2f7f5ffb133574f40a9060d421bd4f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7993167cdfa275450d82bba18269bac5') in 0.013647 seconds
-  Import took 0.017351 seconds .
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Moon.png
+  artifactKey: Guid(65c0f2775ee38bc45aee2c3f2ea37f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Moon.png using Guid(65c0f2775ee38bc45aee2c3f2ea37f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07e0bebda8d743ca3266857035e4596c') in 0.036570 seconds
+  Import took 0.041360 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Bushes_8.prefab
-  artifactKey: Guid(1e8fe7374ec88e244bc05ecd57c60115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Bushes_8.prefab using Guid(1e8fe7374ec88e244bc05ecd57c60115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb932917c9211cd20a25dea18aed7a3') in 0.015862 seconds
-  Import took 0.019025 seconds .
+  Time since last request: 0.000210 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/left_grass.png
+  artifactKey: Guid(8b45ef358ffa6994db1f9d70cc27e29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/left_grass.png using Guid(8b45ef358ffa6994db1f9d70cc27e29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ec1514fe1719c53282db0f2bc3afbc0') in 0.020240 seconds
+  Import took 0.024373 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Grass_6.prefab
-  artifactKey: Guid(319108b3f858b5e4f801fdf1ada69d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Grass_6.prefab using Guid(319108b3f858b5e4f801fdf1ada69d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d3db072448e21c171f39ec594bef45') in 0.013754 seconds
-  Import took 0.017268 seconds .
+  Time since last request: 0.000216 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Moon.png
+  artifactKey: Guid(65c0f2775ee38bc45aee2c3f2ea37f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Moon.png using Guid(65c0f2775ee38bc45aee2c3f2ea37f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07e0bebda8d743ca3266857035e4596c') in 0.017933 seconds
+  Import took 0.022854 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Flat Platformer Template/Prefabs/Windmill.prefab
-  artifactKey: Guid(ce41f33a083de1240ab094faea6c2e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flat Platformer Template/Prefabs/Windmill.prefab using Guid(ce41f33a083de1240ab094faea6c2e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd35fb8243d251ebd80e568776eeb7c') in 0.018033 seconds
-  Import took 0.021901 seconds .
+  Time since last request: 0.257645 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Ground Close.png
+  artifactKey: Guid(0cee1dfe8b5452549bc827cec8c291e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Ground Close.png using Guid(0cee1dfe8b5452549bc827cec8c291e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aed95bdbeee0195b7e520375f022da8') in 0.029877 seconds
+  Import took 0.033565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Hills CLose.png
+  artifactKey: Guid(e9261713c95514240852908cf6e0d0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Hills CLose.png using Guid(e9261713c95514240852908cf6e0d0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b66e66ea9fcb8d8dcd60557917f9aa') in 0.047012 seconds
+  Import took 0.051177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Hills Middle.png
+  artifactKey: Guid(0f72a30af42ea6248aeb3c2735298fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Hills Middle.png using Guid(0f72a30af42ea6248aeb3c2735298fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '206435df1cea7c8f04501465ce8f2619') in 0.035627 seconds
+  Import took 0.040111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Ground Far.png
+  artifactKey: Guid(aad12f63699ec64478fae82fe4a790a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Ground Far.png using Guid(aad12f63699ec64478fae82fe4a790a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0e35a9b78930688ead77554d63b07a8') in 0.023760 seconds
+  Import took 0.027513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Leafes MIddle.png
+  artifactKey: Guid(853d0197c9e053340803c104cd7b22b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Leafes MIddle.png using Guid(853d0197c9e053340803c104cd7b22b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd718b27c59724900686f1d3ef5e877') in 0.032358 seconds
+  Import took 0.035245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Leafes Far.png
+  artifactKey: Guid(620566ef4b98ba449b42d0faa72de628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Leafes Far.png using Guid(620566ef4b98ba449b42d0faa72de628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '527e538f0ba9e028c7793b2205f44148') in 0.028202 seconds
+  Import took 0.031017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Hills Far.png
+  artifactKey: Guid(ba994fea1daafdd4d9269e65d4628db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Hills Far.png using Guid(ba994fea1daafdd4d9269e65d4628db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c2aba65e6d5964df15e850c0a9a6d3') in 0.029149 seconds
+  Import took 0.032226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.128089 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Mountain MIddle_1.png
+  artifactKey: Guid(a171e501df7e3e949b02ffbb7bae3394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Mountain MIddle_1.png using Guid(a171e501df7e3e949b02ffbb7bae3394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7affbc53bdbb0b1a9cf82439ffdc2c83') in 0.088942 seconds
+  Import took 0.096733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Trees far.png
+  artifactKey: Guid(3ebf40eff518ae7449cc8570e3474799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Trees far.png using Guid(3ebf40eff518ae7449cc8570e3474799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91620c8be972c1aef9823e2636c60630') in 0.029971 seconds
+  Import took 0.033388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Trees Middle.png
+  artifactKey: Guid(ce82f4a44814c26419fd7d065d8c441e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Trees Middle.png using Guid(ce82f4a44814c26419fd7d065d8c441e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42ace5a5e94fd14b1fc5fb7577df01d9') in 0.027603 seconds
+  Import took 0.031230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000548 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/NIght sky.png
+  artifactKey: Guid(8e3b953d59e70974db988225fbabaefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/NIght sky.png using Guid(8e3b953d59e70974db988225fbabaefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6bbbdf6f0a8be691c8897d4414ec494') in 0.022461 seconds
+  Import took 0.026670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Trees Close.png
+  artifactKey: Guid(414f09948a25ca24c81f600658f1bc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Trees Close.png using Guid(414f09948a25ca24c81f600658f1bc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5f1d8e39b386c08441946c064b5ec09') in 0.033490 seconds
+  Import took 0.036814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Mountains Far.png
+  artifactKey: Guid(966f6e165c60ea346b5132644ee1902a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Mountains Far.png using Guid(966f6e165c60ea346b5132644ee1902a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa1c171fa6d75dec4c94100c0d8edb4c') in 0.030929 seconds
+  Import took 0.035397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform center.png
+  artifactKey: Guid(d1cb25eb819ea7f439f4557f0523184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform center.png using Guid(d1cb25eb819ea7f439f4557f0523184d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42cd137c197ffa82737f5577cfcfaa1c') in 0.019209 seconds
+  Import took 0.022776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Mountains Close.png
+  artifactKey: Guid(1970d1dcf4a35ca45a93981a11b2c6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Mountains Close.png using Guid(1970d1dcf4a35ca45a93981a11b2c6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9750dcd80b7913a1e0a9c0d80b20f6bf') in 0.023432 seconds
+  Import took 0.028193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/NIght Water Large.png
+  artifactKey: Guid(a4fe90f160ac1374e9f53730db4c870c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/NIght Water Large.png using Guid(a4fe90f160ac1374e9f53730db4c870c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa48171313a9dfbf670d46f0e02cc607') in 0.024866 seconds
+  Import took 0.027861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform center grass.png
+  artifactKey: Guid(5608e0a354db3d64580563b6643058ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform center grass.png using Guid(5608e0a354db3d64580563b6643058ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '848e4a48bcc184ec79c8c74d6fef908c') in 0.015949 seconds
+  Import took 0.020140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Mountain MIddle_2.png
+  artifactKey: Guid(80e8fc2b23946ef4b8b9f6d1af7a552d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Background Night/Night Mountain MIddle_2.png using Guid(80e8fc2b23946ef4b8b9f6d1af7a552d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d1f2536c5b1b326174298bc3ed6d57e') in 0.058993 seconds
+  Import took 0.062003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform center grass.png
+  artifactKey: Guid(5608e0a354db3d64580563b6643058ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform center grass.png using Guid(5608e0a354db3d64580563b6643058ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '848e4a48bcc184ec79c8c74d6fef908c') in 0.009677 seconds
+  Import took 0.013500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062270 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform left.png
+  artifactKey: Guid(a17302f6322ba2845a164f181dbceeaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform left.png using Guid(a17302f6322ba2845a164f181dbceeaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a81c8fa2b21dcfa2d918c5e2f2d44e8b') in 0.023649 seconds
+  Import took 0.028866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform right.png
+  artifactKey: Guid(36eda49fd1130e84a94e9ba2064675dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform right.png using Guid(36eda49fd1130e84a94e9ba2064675dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf57d8e4dda39869f999a11d024a63a3') in 0.022859 seconds
+  Import took 0.027164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform left grass.png
+  artifactKey: Guid(4f60a1a648f7d4e438b4ab4c859e49f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform left grass.png using Guid(4f60a1a648f7d4e438b4ab4c859e49f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ced26a953f59c3df9a5b8c62a8f32e2') in 0.020249 seconds
+  Import took 0.025028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/right corner  .png
+  artifactKey: Guid(4091b8a1116df474586c45b5d8e4a00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/right corner  .png using Guid(4091b8a1116df474586c45b5d8e4a00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02ffba665eb634d0eb919110c50aad7d') in 0.022350 seconds
+  Import took 0.028424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform right grass.png
+  artifactKey: Guid(896fddf922595704db39cb29829f4c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/platform right grass.png using Guid(896fddf922595704db39cb29829f4c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e1965a6c2d382510d27a08ab9d9e640') in 0.018738 seconds
+  Import took 0.022006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020906 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/right_grass.png
+  artifactKey: Guid(dd2b543cc6c4a1b4a9a4fb37ac676166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Blocks Night/right_grass.png using Guid(dd2b543cc6c4a1b4a9a4fb37ac676166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dbf8504fead69146db377bfaeccefe5') in 0.016915 seconds
+  Import took 0.020852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.285816 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/small plant 2.png
+  artifactKey: Guid(b85e3ccc8da505e4490aaf8e772551c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/small plant 2.png using Guid(b85e3ccc8da505e4490aaf8e772551c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0ea9f39ae52eb27c6a62de8393e49e') in 0.017601 seconds
+  Import took 0.021108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/small plant 3.png
+  artifactKey: Guid(0fda46f51e7afa84cbc68db343eab647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/small plant 3.png using Guid(0fda46f51e7afa84cbc68db343eab647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a6da5d76b8d8019a8efebadb55e0ae') in 0.016345 seconds
+  Import took 0.019728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.087156 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/small plant 4.png
+  artifactKey: Guid(82cc4ba17fd981f44a1e696d7f3c47d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/small plant 4.png using Guid(82cc4ba17fd981f44a1e696d7f3c47d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9632a266abc25909a5e25defcfe81426') in 0.018282 seconds
+  Import took 0.023256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.175670 seconds.
+  path: Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/small plant 5.png
+  artifactKey: Guid(e9a4ffaccc9c26d4889fa6b70489f421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Forest Tileset Pack Toon Style/Night/Platform Plants Night/small plant 5.png using Guid(e9a4ffaccc9c26d4889fa6b70489f421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d8a422ac58ff1b832d43100881cb361') in 0.020049 seconds
+  Import took 0.024002 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001049 seconds.
+Registered in 0.001297 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.036 seconds
+- Completed reload, in  1.098 seconds
 Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.9 MB.
+System memory in use after: 88.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2365.
+Total: 3.302300 ms (FindLiveObjects: 0.407100 ms CreateObjectMapping: 0.321900 ms MarkObjects: 2.323500 ms  DeleteObjects: 0.248000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001021 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.263 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.9 MB.
+System memory in use after: 88.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2369.
+Total: 2.184900 ms (FindLiveObjects: 0.303100 ms CreateObjectMapping: 0.123500 ms MarkObjects: 1.549500 ms  DeleteObjects: 0.207600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001581 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.651 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.9 MB.
+System memory in use after: 88.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2373.
+Total: 3.351800 ms (FindLiveObjects: 0.319600 ms CreateObjectMapping: 0.109500 ms MarkObjects: 2.787500 ms  DeleteObjects: 0.133700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001514 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.093 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.9 MB.
+System memory in use after: 88.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2377.
+Total: 4.159500 ms (FindLiveObjects: 0.260200 ms CreateObjectMapping: 0.128900 ms MarkObjects: 3.608600 ms  DeleteObjects: 0.160300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002335 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.711 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.9 MB.
+System memory in use after: 88.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2381.
+Total: 3.780600 ms (FindLiveObjects: 0.247500 ms CreateObjectMapping: 0.084400 ms MarkObjects: 3.248500 ms  DeleteObjects: 0.198400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001715 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.178 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 88.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2385.
+Total: 2.277400 ms (FindLiveObjects: 0.483500 ms CreateObjectMapping: 0.167100 ms MarkObjects: 1.505000 ms  DeleteObjects: 0.120200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001125 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.276 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 88.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2389.
+Total: 2.466400 ms (FindLiveObjects: 0.272900 ms CreateObjectMapping: 0.114600 ms MarkObjects: 1.975900 ms  DeleteObjects: 0.101900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001032 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.169 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2393.
+Total: 2.314700 ms (FindLiveObjects: 0.399000 ms CreateObjectMapping: 0.126900 ms MarkObjects: 1.667700 ms  DeleteObjects: 0.120000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001470 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.214 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2397.
+Total: 2.567000 ms (FindLiveObjects: 0.548600 ms CreateObjectMapping: 0.184800 ms MarkObjects: 1.720700 ms  DeleteObjects: 0.111700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1131.328241 seconds.
+  path: Assets/MAGIC/IMagica.cs
+  artifactKey: Guid(ba3decda398109842883fb7e258504c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MAGIC/IMagica.cs using Guid(ba3decda398109842883fb7e258504c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf14ba1de497cce5c8a41d9a4d395a8') in 0.006623 seconds
+  Import took 0.009779 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001609 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.684 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2401.
+Total: 3.041700 ms (FindLiveObjects: 0.276800 ms CreateObjectMapping: 0.080000 ms MarkObjects: 2.554900 ms  DeleteObjects: 0.128500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 490.088842 seconds.
+  path: Assets/MAGIC/Magic.prefab
+  artifactKey: Guid(ec0f595864ffa694db2e1416d52c4e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MAGIC/Magic.prefab using Guid(ec0f595864ffa694db2e1416d52c4e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d1f1bb6a4c39f44507e5f8cb358c66') in 0.078829 seconds
+  Import took 0.082754 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001929 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.4 MB.
-System memory in use after: 88.4 MB.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.218 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.0 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2313.
-Total: 2.296100 ms (FindLiveObjects: 0.206700 ms CreateObjectMapping: 0.068100 ms MarkObjects: 1.882300 ms  DeleteObjects: 0.137700 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2406.
+Total: 2.899200 ms (FindLiveObjects: 0.390500 ms CreateObjectMapping: 0.134400 ms MarkObjects: 2.267000 ms  DeleteObjects: 0.105100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001413 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.060 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2410.
+Total: 2.560700 ms (FindLiveObjects: 0.187900 ms CreateObjectMapping: 0.066500 ms MarkObjects: 2.158800 ms  DeleteObjects: 0.146200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001554 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.735 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2414.
+Total: 2.284800 ms (FindLiveObjects: 0.338300 ms CreateObjectMapping: 0.098300 ms MarkObjects: 1.737400 ms  DeleteObjects: 0.109300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001703 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.078 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2418.
+Total: 2.472200 ms (FindLiveObjects: 0.522300 ms CreateObjectMapping: 0.226800 ms MarkObjects: 1.609100 ms  DeleteObjects: 0.112000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001313 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.053 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.1 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2422.
+Total: 3.249700 ms (FindLiveObjects: 0.777000 ms CreateObjectMapping: 0.222600 ms MarkObjects: 2.133900 ms  DeleteObjects: 0.111500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001626 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.391 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.1 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2426.
+Total: 2.373700 ms (FindLiveObjects: 0.370500 ms CreateObjectMapping: 0.106000 ms MarkObjects: 1.787900 ms  DeleteObjects: 0.107400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 362.621705 seconds.
+  path: Assets/MAGIC/Magic.prefab
+  artifactKey: Guid(ec0f595864ffa694db2e1416d52c4e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MAGIC/Magic.prefab using Guid(ec0f595864ffa694db2e1416d52c4e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04730b2e4d64c1a0eef38b6bee1d3b6d') in 0.070660 seconds
+  Import took 0.075782 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002338 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.552 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.1 MB.
+System memory in use after: 89.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2431.
+Total: 3.985100 ms (FindLiveObjects: 0.447500 ms CreateObjectMapping: 0.182000 ms MarkObjects: 3.229800 ms  DeleteObjects: 0.123200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.856250 seconds.
+  path: Assets/MAGIC/Magic.prefab
+  artifactKey: Guid(ec0f595864ffa694db2e1416d52c4e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MAGIC/Magic.prefab using Guid(ec0f595864ffa694db2e1416d52c4e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e92e6bf0e76e14274e67efbe15cd877e') in 0.074282 seconds
+  Import took 0.077613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.525315 seconds.
+  path: Assets/MAGIC/Magic.prefab
+  artifactKey: Guid(ec0f595864ffa694db2e1416d52c4e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MAGIC/Magic.prefab using Guid(ec0f595864ffa694db2e1416d52c4e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd4047c9ca3fa606dd524c1cbd613c4') in 0.018860 seconds
+  Import took 0.023367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008622 seconds.
+  path: Assets/MAGIC/Magic.prefab
+  artifactKey: Guid(ec0f595864ffa694db2e1416d52c4e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MAGIC/Magic.prefab using Guid(ec0f595864ffa694db2e1416d52c4e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd4047c9ca3fa606dd524c1cbd613c4') in 0.014808 seconds
+  Import took 0.021963 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001297 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.241 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.1 MB.
+System memory in use after: 89.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2436.
+Total: 3.121200 ms (FindLiveObjects: 0.266000 ms CreateObjectMapping: 0.098500 ms MarkObjects: 2.634700 ms  DeleteObjects: 0.120300 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
