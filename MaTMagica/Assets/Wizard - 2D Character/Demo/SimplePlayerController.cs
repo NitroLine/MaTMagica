@@ -14,6 +14,7 @@ namespace ClearSky
         bool isJumping = false;
         private bool alive = true;
 
+        public int Direction => direction;
         // Start is called before the first frame update
         void Start()
         {
@@ -28,7 +29,6 @@ namespace ClearSky
             {
                 Hurt();
                 Die();
-                Attack();
                 Jump();
                 Run();
             }
@@ -98,12 +98,9 @@ namespace ClearSky
 
             isJumping = false;
         }
-        void Attack()
+        public void Attack()
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                anim.SetTrigger("attack");
-            }
+            anim.SetTrigger("attack");
         }
         void Hurt()
         {

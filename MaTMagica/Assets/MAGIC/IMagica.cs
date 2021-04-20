@@ -4,12 +4,11 @@ using ClearSky;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Assets.MAGIC;
 
 public class IMagica : MonoBehaviour
 {
     // Start is called before the first frame update
-    public bool isFire = true;
-    public Tilemap map;
     void Start()
     {
         Destroy(gameObject,5.0f);
