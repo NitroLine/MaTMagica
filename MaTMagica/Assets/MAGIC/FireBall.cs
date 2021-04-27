@@ -20,7 +20,8 @@ public class FireBall : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         var t = other.gameObject.GetComponent<SimplePlayerController>();
-        t?.IInFire();
+        if (!(t is null))
+            t.isInFire = true;
         Destroy(gameObject);
     }
 }

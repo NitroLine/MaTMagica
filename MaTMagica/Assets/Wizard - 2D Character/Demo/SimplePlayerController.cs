@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor.U2D.Animation;
+using UnityEngine;
 
 namespace ClearSky
 {
@@ -6,13 +7,31 @@ namespace ClearSky
     {
         public float movePower = 10f;
         public float jumpPower = 15f; //Set Gravity Scale in Rigidbody2D Component to 5
+        
+        [SerializeField]
+        public int health = 100;
 
+        public int Health {
+            get => health;
+            set
+            {
+                HealthBar.AdjustCurrentValue(value - health);
+                health = value;
+                if (health <= 0)
+                {
+                    Die();
+                }
+            }
+        }
+        public bool isInFire = false;
+        public bool isFreeze = false;
         private Rigidbody2D rb;
         private Animator anim;
         Vector3 movement;
         private int direction = 1;
         bool isJumping = false;
         private bool alive = true;
+        public bool isAlive => alive;
 
         public int Direction => direction;
         // Start is called before the first frame update
@@ -28,9 +47,9 @@ namespace ClearSky
             if (alive)
             {
                 Hurt();
-                Die();
                 Jump();
                 Run();
+                InFire();
             }
         }
         private void OnTriggerEnter2D(Collider2D other)
@@ -41,13 +60,16 @@ namespace ClearSky
 
 
 
-        public void IInFire()
+        private void InFire()
         {
+            if (!isInFire) return;
             anim.SetTrigger("hurt");
             if (direction == 1)
                 rb.AddForce(new Vector2(-5f, 1f), ForceMode2D.Impulse);
             else
                 rb.AddForce(new Vector2(5f, 1f), ForceMode2D.Impulse);
+            Health -= 1;
+            isInFire = false;
         }
 
         void Run()
@@ -55,7 +77,8 @@ namespace ClearSky
             Vector3 moveVelocity = Vector3.zero;
             anim.SetBool("isRun", false);
 
-
+            movePower = isFreeze ? 2f : 10f;
+            
             if (Input.GetAxisRaw("Horizontal") < 0)
             {
                 direction = -1;
@@ -77,6 +100,7 @@ namespace ClearSky
 
             }
             transform.position += moveVelocity * movePower * Time.deltaTime;
+            isFreeze = false;
         }
         void Jump()
         {
@@ -95,7 +119,6 @@ namespace ClearSky
 
             Vector2 jumpVelocity = new Vector2(0, jumpPower);
             rb.AddForce(jumpVelocity, ForceMode2D.Impulse);
-
             isJumping = false;
         }
         public void Attack()
@@ -115,11 +138,8 @@ namespace ClearSky
         }
         void Die()
         {
-            if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                anim.SetTrigger("die");
-                alive = false;
-            }
+            anim.SetTrigger("die");
+            alive = false;
         }
         void Restart()
         {
