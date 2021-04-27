@@ -18,7 +18,6 @@ public class Ball : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("DESTROY");
         Destroy(gameObject);
     }
 

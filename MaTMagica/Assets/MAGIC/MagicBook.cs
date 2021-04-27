@@ -17,8 +17,10 @@ public class MagicBook : MonoBehaviour
     public int MaxSpellLength;
     public Dictionary<string, GameObject> book = new Dictionary<string, GameObject>();
     private SimplePlayerController player;
+    private Canvas ui;
     void Start()
     {
+        ui = FindObjectOfType<Canvas>();
         player = gameObject.GetComponent<SimplePlayerController>();
         book["Q"] = magic;
         book["E"] = ball;
@@ -31,6 +33,7 @@ public class MagicBook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.anyKey && pressedCodes.Count < MaxSpellLength)
         {
             if (Input.GetKeyDown(KeyCode.Q))

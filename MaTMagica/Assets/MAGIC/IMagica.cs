@@ -20,7 +20,7 @@ public class IMagica : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
 
         var t = other.gameObject.GetComponent<SimplePlayerController>();
