@@ -17,6 +17,7 @@ public class Freeze : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D other)
     {
+        Debug.Log("Inside freeze");
         var t = other.gameObject.GetComponent<SimplePlayerController>();
         if (!(t is null))
             t.isFreeze = true;

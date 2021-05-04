@@ -63,6 +63,7 @@ namespace ClearSky
         private void InFire()
         {
             if (!isInFire) return;
+            isFreeze = false;
             anim.SetTrigger("hurt");
             if (direction == 1)
                 rb.AddForce(new Vector2(-5f, 1f), ForceMode2D.Impulse);
@@ -100,7 +101,7 @@ namespace ClearSky
 
             }
             transform.position += moveVelocity * movePower * Time.deltaTime;
-            isFreeze = false;
+            
         }
         void Jump()
         {
