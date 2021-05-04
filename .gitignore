@@ -2,13 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/MaTMagica/[Ll]ibrary/
-/MaTMagica/[Tt]emp/
-/MaTMagica/[Oo]bj/
-/MaTMagica/[Bb]uild/
-/MaTMagica/[Bb]uilds/
-/MaTMagica/[Ll]ogs/
-/MaTMagica/[Mm]emoryCaptures/
+
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/MaTMagica/[Aa]ssets/**/*.meta
