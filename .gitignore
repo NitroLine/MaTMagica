@@ -9,6 +9,7 @@
 /MaTMagica/[Bb]uilds/
 /MaTMagica/[Ll]ogs/
 /MaTMagica/[Mm]emoryCaptures/
+/MaTMagica/[Uu]serSettings/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/MaTMagica/[Aa]ssets/**/*.meta

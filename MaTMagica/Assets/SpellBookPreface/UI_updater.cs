@@ -51,10 +51,13 @@ public class UI_updater : MonoBehaviour
 
     private void AddImage(GameObject image)
     {
-        GameObject delta = Instantiate(image) as GameObject;
+        var delta = Instantiate(image) as GameObject;
         delta.transform.SetParent(canvas.transform);
         var rect = delta.GetComponent<RectTransform>();
         rect.anchoredPosition = new Vector2(-60*currentPosition-30,30);
+        rect.anchorMin = new Vector2(1, 0);
+        rect.anchorMax = new Vector2(1, 0);
+        rect.pivot = new Vector2(1, 0);
         currentPosition++;
         images.Push(delta);
     }
