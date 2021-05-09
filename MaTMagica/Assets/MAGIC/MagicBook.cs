@@ -78,10 +78,8 @@ public class MagicBook : MonoBehaviour
                     case "FireBall":
                     case "Ball" :
                     {
-                        var pos = player.gameObject.transform.position;
+                        var pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                         pos.z = 6f;
-                        pos.x += player.Direction * 2f;
-                        pos.y += 2f;
                         var rotate = Quaternion.identity;
                         rotate.z += 90f;
                         var spawnedObj = Instantiate(magika.Obj, pos, rotate) as GameObject;
