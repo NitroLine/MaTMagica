@@ -26,5 +26,4 @@ public class Fire : MonoBehaviour
         if (!(t is null))
             t.isInFire = true;
     }
-
 }
