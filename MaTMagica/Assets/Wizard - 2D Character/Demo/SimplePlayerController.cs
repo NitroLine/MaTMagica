@@ -1,5 +1,6 @@
 ﻿using UnityEditor.U2D.Animation;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace ClearSky
 {
@@ -44,9 +45,9 @@ namespace ClearSky
         private void Update()
         {
             Restart();
+            RestartLevel();
             if (alive)
             {
-                Hurt();
                 Jump();
                 Run();
                 InFire();
@@ -58,7 +59,13 @@ namespace ClearSky
             anim.SetBool("isJump", false);
         }
 
-
+        private void RestartLevel()
+        {
+            if (Input.GetKeyDown(KeyCode.Backspace))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        }
 
         private void InFire()
         {
@@ -106,7 +113,15 @@ namespace ClearSky
         void Jump()
         {
             if ((Input.GetButtonDown("Jump") || Input.GetAxisRaw("Vertical") > 0)
-            && !anim.GetBool("isJump"))
+                && !anim.GetBool("isJump"))
+            {
+                JumpMe();
+            }
+        }
+
+        public void JumpMe()
+        {
+            if (!anim.GetBool("isJump"))
             {
                 isJumping = true;
                 anim.SetBool("isJump", true);

@@ -55,13 +55,11 @@ namespace ClearSky
         {
             ResetAnimation();
             anim.SetBool("isRun", true);
-
         }
         public void Jump()
         {
             ResetAnimation();
             anim.SetBool("isJump", true);
-
         }
     }
 }
