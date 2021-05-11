@@ -19,8 +19,6 @@ public class Freeze : MonoBehaviour
     {
         Debug.Log("Inside freeze");
         var t = other.gameObject.GetComponent<SimplePlayerController>();
-        if (!(t is null))
-            t.isFreeze = true;
     }
 }
 

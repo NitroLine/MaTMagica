@@ -1,4 +1,5 @@
-﻿using UnityEditor.U2D.Animation;
+﻿using System;
+using UnityEditor.U2D.Animation;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,7 +26,6 @@ namespace ClearSky
             }
         }
         public bool isInFire = false;
-        public bool isFreeze = false;
         private Rigidbody2D rb;
         private Animator anim;
         Vector3 movement;
@@ -70,7 +70,6 @@ namespace ClearSky
         private void InFire()
         {
             if (!isInFire) return;
-            isFreeze = false;
             anim.SetTrigger("hurt");
             if (direction == 1)
                 rb.AddForce(new Vector2(-5f, 1f), ForceMode2D.Impulse);
@@ -85,8 +84,6 @@ namespace ClearSky
             Vector3 moveVelocity = Vector3.zero;
             anim.SetBool("isRun", false);
 
-            movePower = isFreeze ? 2f : 10f;
-            
             if (Input.GetAxisRaw("Horizontal") < 0)
             {
                 direction = -1;

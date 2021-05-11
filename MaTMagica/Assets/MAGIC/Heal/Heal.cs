@@ -10,7 +10,7 @@ public class Heal : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Wizard").GetComponent<SimplePlayerController>();
-        player.health += 10;
+        player.Health += 10;
         Destroy(gameObject, 1);
     }
     

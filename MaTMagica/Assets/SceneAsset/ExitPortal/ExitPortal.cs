@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using ClearSky;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExitPortal : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class ExitPortal : MonoBehaviour
 
     private void EndLevel()
     {
-        Debug.Log("END LEVEL!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

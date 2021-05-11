@@ -156,7 +156,7 @@ public class MagicBook : MonoBehaviour
                     pos.x += player.Direction * 2f;
                     pos.y += 2f;
                     var rotate = Quaternion.identity;
-                    rotate.z += 90f;
+                    rotate.z += 1f * player.Direction;
                     var spawnedObj = Instantiate(magika.Obj, pos, rotate) as GameObject;
                     var rb = spawnedObj.GetComponent<Rigidbody2D>();
                     var jumpVelocity = new Vector2(player.Direction * 20 * magika.Power, 0);
