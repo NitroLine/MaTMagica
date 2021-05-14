@@ -23,6 +23,9 @@ public class DeadTrig : MonoBehaviour
         if (player is null)
             Destroy(other.gameObject);
         else
+        {
             player.gameObject.transform.position = Vector3.zero;
+            player.Health -= 10;
+        }
     }
 }

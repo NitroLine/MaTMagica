@@ -178,10 +178,8 @@ public class MagicBook : MonoBehaviour
                     break;
                 }
             }
-
         }
         pressedCodes.Clear();
-
     }
 
     private KeyCombination GetComb(params KeyCode[] comb)

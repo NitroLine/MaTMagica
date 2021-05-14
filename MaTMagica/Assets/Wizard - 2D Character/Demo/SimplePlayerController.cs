@@ -11,7 +11,7 @@ namespace ClearSky
         public float jumpPower = 15f; //Set Gravity Scale in Rigidbody2D Component to 5
         
         [SerializeField]
-        public int health = 100;
+        private int health = 100;
 
         public int Health {
             get => health;

@@ -26,7 +26,11 @@ public class ExitPortal : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         var player = other.gameObject.GetComponent<SimplePlayerController>();
-        if (player == null) Destroy(other.gameObject);
+        if (player == null)
+        {
+            Destroy(other.gameObject);
+            return;
+        }
         EndLevel();
     }
 }

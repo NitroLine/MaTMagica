@@ -15,9 +15,17 @@ public class JumpPlatform : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         var player = other.gameObject.GetComponent<SimplePlayerController>();
-        if (player == null) return;
-        player.jumpPower *= 2;
-        player.JumpMe();
-        player.jumpPower /= 2;
+        var rb = other.gameObject.GetComponent<Rigidbody2D>();
+        if (player != null)
+        {
+            player.jumpPower *= 2;
+            player.JumpMe();
+            player.jumpPower /= 2;
+            return;
+        }
+        if (rb == null) return;
+        var force = new Vector2(0,20f);
+        rb.AddForce(force,ForceMode2D.Impulse);
+
     }
 }
