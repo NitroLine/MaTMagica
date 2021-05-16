@@ -42,14 +42,21 @@ namespace ClearSky
             anim = GetComponent<Animator>();
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             Restart();
             RestartLevel();
             if (alive)
             {
-                Jump();
                 Run();
+            }
+        }
+
+        private void Update()
+        {
+            if (alive)
+            {
+                Jump();
                 InFire();
             }
         }

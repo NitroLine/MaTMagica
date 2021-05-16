@@ -28,16 +28,21 @@ public class Diolog : MonoBehaviour
     [SerializeField] public Canvas NextUI;
     [SerializeField] public bool isStarted;
 
+    public bool IsEnded => curPhrase >= Phrases.Length;
     private int curPhrase = -1;
     private int curImage = -1;
     private int curName = -1;
     private int curBackground = -1;
     void Start()
     {
+        
         gameObject.GetComponent<Canvas>().enabled = isStarted;
-        NextUI.enabled = !isStarted;
+        if (isStarted)
+            NextUI.enabled = false;
         ImagePlace.color = ImagePlace.texture == null ? new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
         BackgroundPlace.color = BackgroundPlace.texture == null ? new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
+        if (isStarted)
+            StartDialog();
     }
 
     // Update is called once per frame
@@ -59,17 +64,19 @@ public class Diolog : MonoBehaviour
         NextUI.enabled = false;
         ImagePlace.color = ImagePlace.texture == null ? new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
         BackgroundPlace.color = BackgroundPlace.texture == null ? new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
-
+        Time.timeScale = 0;
     }
 
     public void NextPhrase()
     {
+        if (!isStarted) return;
         curPhrase += 1;
-        if (curPhrase >= Phrases.Length)
+        if (IsEnded)
         {
             gameObject.GetComponent<Canvas>().enabled = false;
             NextUI.enabled = true;
             isStarted = false;
+            Time.timeScale = 1;
             return;
         }
 
@@ -78,7 +85,7 @@ public class Diolog : MonoBehaviour
             curImage++;
             if (curImage < Images.Length)
                 ImagePlace.texture = Images[curImage];
-            ImagePlace.color = ImagePlace.texture == null ? new Color(0,0,0,0) : new Color(255, 255, 255, 1);
+            ImagePlace.color = ImagePlace.texture == null ? new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
         }
 
         if (WhenBackgroundChange.Contains(curPhrase))
@@ -86,7 +93,8 @@ public class Diolog : MonoBehaviour
             curBackground++;
             if (curBackground < Backgrounds.Length)
                 BackgroundPlace.texture = Backgrounds[curBackground];
-            BackgroundPlace.color = BackgroundPlace.texture == null ? new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
+            BackgroundPlace.color =
+                BackgroundPlace.texture == null ? new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
         }
 
         if (WhenNamesChange.Contains(curPhrase))
@@ -99,5 +107,5 @@ public class Diolog : MonoBehaviour
         TextPlace.text = Phrases[curPhrase];
     }
 
-    
+
 }
