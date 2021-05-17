@@ -14,7 +14,6 @@ public class NextLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if(gameObject.GetComponent<Diolog>().IsEnded)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }

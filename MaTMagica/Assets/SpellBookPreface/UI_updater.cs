@@ -20,8 +20,11 @@ public class UI_updater : MonoBehaviour
     public GameObject shieldText;
     public GameObject windText;
 
+    public Text HelpNamePlace;
     private float currentPosition;
+    private float currentHelpPosition;
     private Stack<GameObject> images = new Stack<GameObject>();
+    private Stack<GameObject> helpImages = new Stack<GameObject>();
     
     void Start()
     {
@@ -35,6 +38,10 @@ public class UI_updater : MonoBehaviour
         
     }
 
+    public void PutHelpName(string name)
+    {
+        HelpNamePlace.text = name;
+    }
     public void ClearCanvas()
     {
         while (images.Count > 0)
@@ -42,26 +49,37 @@ public class UI_updater : MonoBehaviour
             Destroy(images.Pop());
         }
         currentPosition = 0;
+        ClearHelpCanvas();
     }
 
-    public void AddImageOnButton(KeyCode code)
+    public void ClearHelpCanvas()
+    {
+        HelpNamePlace.text = "";
+        while (helpImages.Count > 0)
+        {
+            Destroy(helpImages.Pop());
+        }
+        currentHelpPosition = 0;
+    }
+
+    public void AddImageOnButton(KeyCode code, bool isHelp = false,bool isTranspanent = false)
     {
         switch (code)
         {
             case KeyCode.Q:
-                AddImage(ballImage);
+                AddImage(ballImage, isHelp, isTranspanent);
                 break;
             case KeyCode.E:
-                AddImage(leafImage);
+                AddImage(leafImage, isHelp, isTranspanent);
                 break;
             case KeyCode.Alpha1:
-                AddImage(iceImage);
+                AddImage(iceImage, isHelp, isTranspanent);
                 break;
             case KeyCode.Alpha2:
-                AddImage(shieldImage);
+                AddImage(shieldImage, isHelp, isTranspanent);
                 break;
             case KeyCode.Alpha3:
-                AddImage(windImage);
+                AddImage(windImage, isHelp, isTranspanent);
                 break;
         }
     }
@@ -93,16 +111,30 @@ public class UI_updater : MonoBehaviour
         }
     }
 
-    private void AddImage(GameObject image)
+    private void AddImage(GameObject image, bool isHelp,bool isTranspanent)
     {
         var delta = Instantiate(image) as GameObject;
         delta.transform.SetParent(canvas.transform);
         var rect = delta.GetComponent<RectTransform>();
-        rect.anchoredPosition = new Vector2(-60*currentPosition-30,15);
-        rect.anchorMin = new Vector2(1, 0);
-        rect.anchorMax = new Vector2(1, 0);
-        rect.pivot = new Vector2(1, 0);
-        currentPosition++;
-        images.Push(delta);
+        if (!isHelp)
+        {
+            rect.anchoredPosition = new Vector2(-60 * currentPosition - 30, 15);
+            rect.anchorMin = new Vector2(1, 0);
+            rect.anchorMax = new Vector2(1, 0);
+            rect.pivot = new Vector2(1, 0);
+            currentPosition++;
+            images.Push(delta);
+        }
+        else
+        {
+            if (isTranspanent)
+                delta.GetComponent<Image>().color = new Color(255,255,255,0.7f);
+            rect.anchoredPosition = new Vector2(-60 * currentHelpPosition - 30, 70);
+            rect.anchorMin = new Vector2(1, 0);
+            rect.anchorMax = new Vector2(1, 0);
+            rect.pivot = new Vector2(1, 0);
+            currentHelpPosition++;
+            helpImages.Push(delta);
+        }
     }
 }

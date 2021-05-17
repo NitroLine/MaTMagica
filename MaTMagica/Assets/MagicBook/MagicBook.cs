@@ -12,6 +12,7 @@ public class MagicBook : MonoBehaviour
 {
     // Start is called before the first frame update
     public UI_updater uiUpdater;
+    public MagicHelper uiHelp;
     public GameObject platform;
     public GameObject platformLeaf;
     public GameObject platformFreeze;
@@ -23,8 +24,8 @@ public class MagicBook : MonoBehaviour
     public int MaxSpellLength;
     public int StartRunesCount = 10;
 
-    private Stack<KeyCode> pressedCodes = new Stack<KeyCode>();
-    private Dictionary<KeyCombination, Magika> keyCombinationsToMagik = new Dictionary<KeyCombination, Magika>();
+    public readonly List<KeyCode> pressedCodes = new List<KeyCode>();
+    public readonly Dictionary<KeyCombination, Magika> KeyCombinationsToMagik = new Dictionary<KeyCombination, Magika>();
     private readonly Dictionary<Rune, int> RunesCount = new Dictionary<Rune, int>();
     private SimplePlayerController player;
     private readonly Dictionary<KeyCode,Rune> keyCodeToRune = new Dictionary<KeyCode, Rune>()
@@ -41,36 +42,36 @@ public class MagicBook : MonoBehaviour
     void Start()
     {
         player = gameObject.GetComponent<SimplePlayerController>();
-        keyCombinationsToMagik[GetComb(KeyCode.Q)] =
-            new Magika(ball, 0);
-        keyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.Q)] =
-            new Magika(ball, 1);
-        keyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.Q, KeyCode.Q)] =
-            new Magika(ball, 2);
+        KeyCombinationsToMagik[GetComb(KeyCode.Q)] =
+            new Magika(ball, "Камень",0);
+        KeyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.Q)] =
+            new Magika(ball, "Двойной камень",1);
+        KeyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.Q, KeyCode.Q)] =
+            new Magika(ball, "Тройной камень", 2);
 
-        keyCombinationsToMagik[GetComb(KeyCode.E)] =
-            new Magika(heal);
+        KeyCombinationsToMagik[GetComb(KeyCode.E)] =
+            new Magika(heal, "Лечение");
 
-        keyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha2, KeyCode.Alpha3)] =
-            new Magika(jumpPlatform);
+        KeyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha2, KeyCode.Alpha3)] =
+            new Magika(jumpPlatform, "Прыгательная платформа");
 
-        keyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E)] =
-            new Magika(platformLeaf);
-        keyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha2)] =
-            new Magika(platform);
-        keyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha2, KeyCode.Alpha1)] =
-            new Magika(platformFreeze);
-        keyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha1)] =
-            new Magika(platformLeafFreeze);
+        KeyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E)] =
+            new Magika(platformLeaf, "Экологичная платформа");
+        KeyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha2)] =
+            new Magika(platform, "Платформа");
+        KeyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha2, KeyCode.Alpha1)] =
+            new Magika(platformFreeze, "Парящая платформа");
+        KeyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha1)] =
+            new Magika(platformLeafFreeze, " Экологично-Парящая платформа");
 
-        keyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Q)] =
-            new Magika(platformLeaf, 0);
-        keyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha2, KeyCode.Q)] =
-            new Magika(platform,0);
-        keyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha2, KeyCode.Alpha1, KeyCode.Q)] =
-            new Magika(platformFreeze, 0);
-        keyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha1, KeyCode.Q)] =
-            new Magika(platformLeafFreeze,0);
+        KeyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Q)] =
+            new Magika(platformLeaf, "Экологичная cтена", 0);
+        KeyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha2, KeyCode.Q)] =
+            new Magika(platform,"Стена",0);
+        KeyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha2, KeyCode.Alpha1, KeyCode.Q)] =
+            new Magika(platformFreeze,"Замороженная стена", 0);
+        KeyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.E, KeyCode.Alpha1, KeyCode.Q)] =
+            new Magika(platformLeafFreeze,"Экологично Замороженная стена",0);
 
 
         foreach (Rune rune in Enum.GetValues(typeof(Rune)))
@@ -90,51 +91,51 @@ public class MagicBook : MonoBehaviour
         
         if (Input.anyKey && pressedCodes.Count < MaxSpellLength && player.isAlive)
         {
+            
             if (Input.GetKeyDown(KeyCode.Q) && RunesCount[keyCodeToRune[KeyCode.Q]] > 0)
             {
-                pressedCodes.Push(KeyCode.Q);
+                pressedCodes.Add(KeyCode.Q);
                 uiUpdater.AddImageOnButton(KeyCode.Q);
+                uiHelp.UpdateHelp();
             }
 
             if (Input.GetKeyDown(KeyCode.E) && RunesCount[keyCodeToRune[KeyCode.E]] > 0)
             {
-                pressedCodes.Push(KeyCode.E);
+                pressedCodes.Add(KeyCode.E);
                 uiUpdater.AddImageOnButton(KeyCode.E);
+                uiHelp.UpdateHelp();
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha1) && RunesCount[keyCodeToRune[KeyCode.Alpha1]] > 0)
             {
-                pressedCodes.Push(KeyCode.Alpha1);
+                pressedCodes.Add(KeyCode.Alpha1);
                 uiUpdater.AddImageOnButton(KeyCode.Alpha1);
+                uiHelp.UpdateHelp();
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha2) && RunesCount[keyCodeToRune[KeyCode.Alpha2]] > 0)
             {
-                pressedCodes.Push(KeyCode.Alpha2);
+                pressedCodes.Add(KeyCode.Alpha2);
                 uiUpdater.AddImageOnButton(KeyCode.Alpha2);
+                uiHelp.UpdateHelp();
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha3) && RunesCount[keyCodeToRune[KeyCode.Alpha3]] > 0)
             {
-                pressedCodes.Push(KeyCode.Alpha3);
+                pressedCodes.Add(KeyCode.Alpha3);
                 uiUpdater.AddImageOnButton(KeyCode.Alpha3);
+                uiHelp.UpdateHelp();
             }
         }
 
         if (!Input.GetMouseButtonDown(0) || !player.isAlive) return;
-        var combinations = new List<KeyCode>();
+        
         uiUpdater.ClearCanvas();
-        while (pressedCodes.Count > 0)
-        {
-            combinations.Add(pressedCodes.Pop());
-        }
-
-        combinations.Reverse();
-        if (keyCombinationsToMagik.ContainsKey(GetCombFromList(combinations)))
+        if (KeyCombinationsToMagik.ContainsKey(GetCombFromList(pressedCodes)))
         {
             player.Attack();
-            var magika = keyCombinationsToMagik[GetCombFromList(combinations)];
-            foreach (var key in combinations)
+            var magika = KeyCombinationsToMagik[GetCombFromList(pressedCodes)];
+            foreach (var key in pressedCodes)
                 RunesCount[keyCodeToRune[key]]--;
             uiUpdater.UpdateRuneCount(RunesCount);
             switch (magika.Obj.name)
@@ -180,13 +181,14 @@ public class MagicBook : MonoBehaviour
             }
         }
         pressedCodes.Clear();
+        uiHelp.UpdateHelp();
     }
 
-    private KeyCombination GetComb(params KeyCode[] comb)
+    public static KeyCombination GetComb(params KeyCode[] comb)
     {
         return new KeyCombination(comb);
     }
-    private KeyCombination GetCombFromList(List<KeyCode> comb)
+    private static KeyCombination GetCombFromList(List<KeyCode> comb)
     {
         return new KeyCombination(comb);
     }
