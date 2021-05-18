@@ -35,7 +35,6 @@ public class Diolog : MonoBehaviour
     private int curBackground = -1;
     void Start()
     {
-        
         gameObject.GetComponent<Canvas>().enabled = isStarted;
         if (isStarted)
             NextUI.enabled = false;

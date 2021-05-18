@@ -13,6 +13,8 @@ namespace ClearSky
         [SerializeField]
         private int health = 100;
 
+        public DeathUI UiDeath;
+
         public int Health {
             get => health;
             set
@@ -160,6 +162,7 @@ namespace ClearSky
         {
             anim.SetTrigger("die");
             alive = false;
+            UiDeath.Show();
         }
         void Restart()
         {

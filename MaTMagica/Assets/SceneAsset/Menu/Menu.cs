@@ -14,6 +14,6 @@ public class Menu : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
-        EditorApplication.Exit(0);
+        EditorApplication.isPlaying = false;
     }
 }
