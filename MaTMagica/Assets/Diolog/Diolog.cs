@@ -47,7 +47,7 @@ public class Diolog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isStarted && Input.GetMouseButtonUp(0))
+        if(isStarted && (Input.GetMouseButtonUp(0) || Input.GetKeyDown(KeyCode.Space)))
             NextPhrase();
     }
 

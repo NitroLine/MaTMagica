@@ -45,9 +45,9 @@ public class MagicBook : MonoBehaviour
         KeyCombinationsToMagik[GetComb(KeyCode.Q)] =
             new Magika(ball, "Камень",0);
         KeyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.Q)] =
-            new Magika(ball, "Двойной камень",1);
+            new Magika(ball,  "Ускореный камень",1);
         KeyCombinationsToMagik[GetComb(KeyCode.Q, KeyCode.Q, KeyCode.Q)] =
-            new Magika(ball, "Тройной камень", 2);
+            new Magika(ball, "Сильно ускореный камень", 2);
 
         KeyCombinationsToMagik[GetComb(KeyCode.E)] =
             new Magika(heal, "Лечение");

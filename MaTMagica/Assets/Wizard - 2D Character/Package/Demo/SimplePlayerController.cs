@@ -119,7 +119,7 @@ namespace ClearSky
         void Jump()
         {
             if ((Input.GetButtonDown("Jump") || Input.GetAxisRaw("Vertical") > 0)
-                && !anim.GetBool("isJump"))
+                && !anim.GetBool("isJump") && Time.timeScale != 0)
             {
                 JumpMe();
             }
