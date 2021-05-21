@@ -20,7 +20,9 @@ public class Flus_Close_View : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         var player = other.gameObject.GetComponent<SimplePlayerController>();
-        if (player == null) return;
-        gameObject.GetComponentInParent<Flus_Move>().target = player.transform.position - Vector3.up * 2;
+        if (player == null) 
+            return;
+        gameObject.GetComponentInParent<Flus_Move>().target = 
+            player.transform.position - Vector3.up * 2;
     }
 }

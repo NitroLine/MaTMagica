@@ -6,11 +6,13 @@ using UnityEngine;
 public class DiologTrigger : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] public bool IsRepeatable = false;
+    [SerializeField] 
+    public bool isRepeatable;
     [SerializeField]
-    public Canvas Dialog;
+    public Canvas dialog;
 
-    private bool isUsed = false;
+    private bool isUsed;
+    
     void Start()
     {
         
@@ -21,11 +23,14 @@ public class DiologTrigger : MonoBehaviour
     {
         
     }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.GetComponent<SimplePlayerController>() == null) return;
-        if (!IsRepeatable && isUsed) return;
-        var dialog = Dialog.gameObject.GetComponent<Diolog>();
+        if (other.gameObject.GetComponent<SimplePlayerController>() == null) 
+            return;
+        if (!isRepeatable && isUsed) 
+            return;
+        var dialog = this.dialog.gameObject.GetComponent<Diolog>();
         dialog?.StartDialog();
         isUsed = true;
     }

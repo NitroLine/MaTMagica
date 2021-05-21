@@ -23,9 +23,9 @@ public class JumpPlatform : MonoBehaviour
             player.jumpPower /= 2;
             return;
         }
-        if (rb == null) return;
+        if (rb == null) 
+            return;
         var force = new Vector2(0,20f);
         rb.AddForce(force,ForceMode2D.Impulse);
-
     }
 }

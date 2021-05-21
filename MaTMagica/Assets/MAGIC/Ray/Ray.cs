@@ -6,8 +6,9 @@ using UnityEngine;
 
 public class Ray : MonoBehaviour
 {
+    //TODO: удалить
     // Start is called before the first frame update
-    public SimplePlayerController StartPoint;
+    public SimplePlayerController startPoint;
     private LineRenderer line;
     void Start()
     {
@@ -19,7 +20,7 @@ public class Ray : MonoBehaviour
     void Update()
     {
         //Debug.Log(StartPoint.transform.Find("Skeletal/15 Staff"));
-        var start = StartPoint.transform.Find("Skeletal/15 Staff").transform.position;
+        var start = startPoint.transform.Find("Skeletal/15 Staff").transform.position;
         var end =  Camera.main.ScreenToWorldPoint(Input.mousePosition);
         start.z = 0;
         end.z = 0;

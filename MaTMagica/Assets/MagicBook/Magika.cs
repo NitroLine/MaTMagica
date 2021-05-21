@@ -9,9 +9,9 @@ namespace Assets.MAGIC
 {
     public class Magika
     {
-        public string Name;
-        public GameObject Obj;
-        public int Power;
+        public readonly string Name;
+        public readonly GameObject Obj;
+        public readonly int Power;
 
         public Magika(GameObject obj,string name, int power = 1)
         {
@@ -45,13 +45,14 @@ namespace Assets.MAGIC
 
         public override int GetHashCode()
         {
-            return Combinations.OrderBy(x=>x).Aggregate(0, (current, i) => (current + (int) i) * 307);
+            return Combinations
+                .OrderBy(x => x)
+                .Aggregate(0, (current, i) => (current + (int) i) * 307);
         }
 
         public override bool Equals(object obj)
         {
-            var other = obj as KeyCombination;
-            if (other == null || Combinations.Count != other.Combinations.Count)
+            if (!(obj is KeyCombination other) || Combinations.Count != other.Combinations.Count)
                 return false;
             other.Combinations.Sort();
             return !Combinations.OrderBy(x=>x).Where((t, i) => t != other.Combinations[i]).Any();

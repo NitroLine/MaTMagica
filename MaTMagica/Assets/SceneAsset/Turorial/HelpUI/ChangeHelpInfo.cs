@@ -5,11 +5,11 @@ using UnityEngine;
 public class ChangeHelpInfo : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject MovementHelp;
-    public GameObject StackHelp;
-    public GameObject RuneHelp;
-    public Diolog ChangeDialog;
-    public Diolog EndDialog;
+    public GameObject movementHelp;
+    public GameObject stackHelp;
+    public GameObject runeHelp;
+    public Diolog changeDialog;
+    public Diolog endDialog;
 
     void Start()
     {
@@ -19,21 +19,21 @@ public class ChangeHelpInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (EndDialog != null && (EndDialog.isStarted || EndDialog.IsEnded))
+        if (endDialog != null && (endDialog.isStarted || endDialog.IsEnded))
         {
             gameObject.GetComponent<Canvas>().enabled = false;
             return;
         }
-        if (ChangeDialog.isStarted)
+        if (changeDialog.isStarted)
         {
             gameObject.GetComponent<Canvas>().enabled = false;
             return;
         }
-        if (!ChangeDialog.IsEnded) return;
+        if (!changeDialog.IsEnded) return;
         gameObject.GetComponent<Canvas>().enabled = true;
-        MovementHelp.transform.localScale = Vector3.zero;
-        RuneHelp.transform.localScale = Vector3.one;
-        StackHelp.transform.localScale = Vector3.one;
+        movementHelp.transform.localScale = Vector3.zero;
+        runeHelp.transform.localScale = Vector3.one;
+        stackHelp.transform.localScale = Vector3.one;
 
 
     }

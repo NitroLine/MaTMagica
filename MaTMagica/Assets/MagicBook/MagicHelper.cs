@@ -16,7 +16,7 @@ public class MagicHelper : MonoBehaviour
         
     }
 
-    public int BinarySearch(KeyCombination combination, KeyCode item)
+    private int BinarySearch(KeyCombination combination, KeyCode item)
     {
         var temp = combination.Combinations;
         temp.Sort();
@@ -44,13 +44,11 @@ public class MagicHelper : MonoBehaviour
         combination.Combinations.Remove(item);
         return 1;
     }
-
-
-
+    
     // Update is called once per frame
     public void UpdateHelp()
     {
-        var curCodes = magicBook.pressedCodes;
+        var curCodes = magicBook.PressedCodes;
         if (curCodes.Count == 0) return;
         var possibleMagiks = magicBook
             .KeyCombinationsToMagik

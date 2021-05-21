@@ -16,6 +16,7 @@ public class Flus_Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, target, acceleration*Time.deltaTime);
+        transform.position = Vector3.MoveTowards(
+            transform.position, target, acceleration*Time.deltaTime);
     }
 }

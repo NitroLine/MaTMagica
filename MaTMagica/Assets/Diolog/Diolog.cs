@@ -8,27 +8,33 @@ public class Diolog : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]
-    public string[] Phrases = {""};
+    public string[] phrases = {""};
     [SerializeField]
-    public Texture[] Images = new Texture[0];
+    public Texture[] images = new Texture[0];
     [SerializeField]
-    public int[] WhenImageChange = { 0 };
+    public int[] whenImageChange = { 0 };
     [SerializeField]
-    public string[] Names = {""};
+    public string[] names = {""};
     [SerializeField]
-    public int[] WhenNamesChange = { 0 };
+    public int[] whenNamesChange = { 0 };
     [SerializeField]
-    public Texture[] Backgrounds = new Texture[0];
+    public Texture[] backgrounds = new Texture[0];
     [SerializeField]
-    public int[] WhenBackgroundChange = { 0 };
-    [SerializeField] public Text TextPlace;
-    [SerializeField] public RawImage ImagePlace;
-    [SerializeField] public Text NamePlace;
-    [SerializeField] public RawImage BackgroundPlace;
-    [SerializeField] public Canvas NextUI;
-    [SerializeField] public bool isStarted;
+    public int[] whenBackgroundChange = { 0 };
+    [SerializeField] 
+    public Text textPlace;
+    [SerializeField] 
+    public RawImage imagePlace;
+    [SerializeField] 
+    public Text namePlace;
+    [SerializeField] 
+    public RawImage backgroundPlace;
+    [SerializeField] 
+    public Canvas nextUI;
+    [SerializeField] 
+    public bool isStarted;
 
-    public bool IsEnded => curPhrase >= Phrases.Length;
+    public bool IsEnded => curPhrase >= phrases.Length;
     private int curPhrase = -1;
     private int curImage = -1;
     private int curName = -1;
@@ -37,9 +43,11 @@ public class Diolog : MonoBehaviour
     {
         gameObject.GetComponent<Canvas>().enabled = isStarted;
         if (isStarted)
-            NextUI.enabled = false;
-        ImagePlace.color = ImagePlace.texture == null ? new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
-        BackgroundPlace.color = BackgroundPlace.texture == null ? new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
+            nextUI.enabled = false;
+        imagePlace.color = imagePlace.texture == null ? 
+            new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
+        backgroundPlace.color = backgroundPlace.texture == null ? 
+            new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
         if (isStarted)
             StartDialog();
     }
@@ -57,12 +65,14 @@ public class Diolog : MonoBehaviour
         curImage = -1;
         curName = -1;
         curBackground = -1;
-        TextPlace.text = "";
+        textPlace.text = "";
         isStarted = true;
         gameObject.GetComponent<Canvas>().enabled = true;
-        NextUI.enabled = false;
-        ImagePlace.color = ImagePlace.texture == null ? new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
-        BackgroundPlace.color = BackgroundPlace.texture == null ? new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
+        nextUI.enabled = false;
+        imagePlace.color = imagePlace.texture == null ? 
+            new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
+        backgroundPlace.color = backgroundPlace.texture == null ? 
+            new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
         Time.timeScale = 0;
     }
 
@@ -73,38 +83,37 @@ public class Diolog : MonoBehaviour
         if (IsEnded)
         {
             gameObject.GetComponent<Canvas>().enabled = false;
-            NextUI.enabled = true;
+            nextUI.enabled = true;
             isStarted = false;
             Time.timeScale = 1;
             return;
         }
 
-        if (WhenImageChange.Contains(curPhrase))
+        if (whenImageChange.Contains(curPhrase))
         {
             curImage++;
-            if (curImage < Images.Length)
-                ImagePlace.texture = Images[curImage];
-            ImagePlace.color = ImagePlace.texture == null ? new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
+            if (curImage < images.Length)
+                imagePlace.texture = images[curImage];
+            imagePlace.color = imagePlace.texture == null ? 
+                new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
         }
 
-        if (WhenBackgroundChange.Contains(curPhrase))
+        if (whenBackgroundChange.Contains(curPhrase))
         {
             curBackground++;
-            if (curBackground < Backgrounds.Length)
-                BackgroundPlace.texture = Backgrounds[curBackground];
-            BackgroundPlace.color =
-                BackgroundPlace.texture == null ? new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
+            if (curBackground < backgrounds.Length)
+                backgroundPlace.texture = backgrounds[curBackground];
+            backgroundPlace.color = backgroundPlace.texture == null ? 
+                    new Color(0, 0, 0, 0) : new Color(255, 255, 255, 1);
         }
 
-        if (WhenNamesChange.Contains(curPhrase))
+        if (whenNamesChange.Contains(curPhrase))
         {
             curName++;
-            if (curName < Names.Length)
-                NamePlace.text = Names[curName];
+            if (curName < names.Length)
+                namePlace.text = names[curName];
         }
-
-        TextPlace.text = Phrases[curPhrase];
+        
+        textPlace.text = phrases[curPhrase];
     }
-
-
 }

@@ -21,12 +21,12 @@ public class MagicBook : MonoBehaviour
     public GameObject ball;
     public GameObject heal;
 
-    public int MaxSpellLength;
-    public int StartRunesCount = 10;
+    public int maxSpellLength;
+    public int startRunesCount = 10;
 
-    public readonly List<KeyCode> pressedCodes = new List<KeyCode>();
+    public readonly List<KeyCode> PressedCodes = new List<KeyCode>();
     public readonly Dictionary<KeyCombination, Magika> KeyCombinationsToMagik = new Dictionary<KeyCombination, Magika>();
-    private readonly Dictionary<Rune, int> RunesCount = new Dictionary<Rune, int>();
+    private readonly Dictionary<Rune, int> runesCount = new Dictionary<Rune, int>();
     private SimplePlayerController player;
     private readonly Dictionary<KeyCode,Rune> keyCodeToRune = new Dictionary<KeyCode, Rune>()
     {
@@ -36,9 +36,7 @@ public class MagicBook : MonoBehaviour
         [KeyCode.Alpha2] = Rune.Shield,
         [KeyCode.Alpha3] = Rune.Wind,
     };
-
-
-
+    
     void Start()
     {
         player = gameObject.GetComponent<SimplePlayerController>();
@@ -75,54 +73,54 @@ public class MagicBook : MonoBehaviour
 
 
         foreach (Rune rune in Enum.GetValues(typeof(Rune)))
-            RunesCount[rune] = StartRunesCount;
-        uiUpdater.UpdateRuneCount(RunesCount);
+            runesCount[rune] = startRunesCount;
+        uiUpdater.UpdateRuneCount(runesCount);
     }
 
     public void AddRunes(Rune type, int count)
     {
-        RunesCount[type] += count;
-        uiUpdater.UpdateRuneCount(RunesCount);
+        runesCount[type] += count;
+        uiUpdater.UpdateRuneCount(runesCount);
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Time.timeScale == 0) return;
-        if (Input.anyKey && pressedCodes.Count < MaxSpellLength && player.isAlive)
+        if (Input.anyKey && PressedCodes.Count < maxSpellLength && player.isAlive)
         {
             
-            if (Input.GetKeyDown(KeyCode.Q) && RunesCount[keyCodeToRune[KeyCode.Q]] > 0)
+            if (Input.GetKeyDown(KeyCode.Q) && runesCount[keyCodeToRune[KeyCode.Q]] > 0)
             {
-                pressedCodes.Add(KeyCode.Q);
+                PressedCodes.Add(KeyCode.Q);
                 uiUpdater.AddImageOnButton(KeyCode.Q);
                 uiHelp.UpdateHelp();
             }
 
-            if (Input.GetKeyDown(KeyCode.E) && RunesCount[keyCodeToRune[KeyCode.E]] > 0)
+            if (Input.GetKeyDown(KeyCode.E) && runesCount[keyCodeToRune[KeyCode.E]] > 0)
             {
-                pressedCodes.Add(KeyCode.E);
+                PressedCodes.Add(KeyCode.E);
                 uiUpdater.AddImageOnButton(KeyCode.E);
                 uiHelp.UpdateHelp();
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha1) && RunesCount[keyCodeToRune[KeyCode.Alpha1]] > 0)
+            if (Input.GetKeyDown(KeyCode.Alpha1) && runesCount[keyCodeToRune[KeyCode.Alpha1]] > 0)
             {
-                pressedCodes.Add(KeyCode.Alpha1);
+                PressedCodes.Add(KeyCode.Alpha1);
                 uiUpdater.AddImageOnButton(KeyCode.Alpha1);
                 uiHelp.UpdateHelp();
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha2) && RunesCount[keyCodeToRune[KeyCode.Alpha2]] > 0)
+            if (Input.GetKeyDown(KeyCode.Alpha2) && runesCount[keyCodeToRune[KeyCode.Alpha2]] > 0)
             {
-                pressedCodes.Add(KeyCode.Alpha2);
+                PressedCodes.Add(KeyCode.Alpha2);
                 uiUpdater.AddImageOnButton(KeyCode.Alpha2);
                 uiHelp.UpdateHelp();
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha3) && RunesCount[keyCodeToRune[KeyCode.Alpha3]] > 0)
+            if (Input.GetKeyDown(KeyCode.Alpha3) && runesCount[keyCodeToRune[KeyCode.Alpha3]] > 0)
             {
-                pressedCodes.Add(KeyCode.Alpha3);
+                PressedCodes.Add(KeyCode.Alpha3);
                 uiUpdater.AddImageOnButton(KeyCode.Alpha3);
                 uiHelp.UpdateHelp();
             }
@@ -131,13 +129,13 @@ public class MagicBook : MonoBehaviour
         if (!Input.GetMouseButtonDown(0) || !player.isAlive) return;
         
         uiUpdater.ClearCanvas();
-        if (KeyCombinationsToMagik.ContainsKey(GetCombFromList(pressedCodes)))
+        if (KeyCombinationsToMagik.ContainsKey(GetCombFromList(PressedCodes)))
         {
             player.Attack();
-            var magika = KeyCombinationsToMagik[GetCombFromList(pressedCodes)];
-            foreach (var key in pressedCodes)
-                RunesCount[keyCodeToRune[key]]--;
-            uiUpdater.UpdateRuneCount(RunesCount);
+            var magika = KeyCombinationsToMagik[GetCombFromList(PressedCodes)];
+            foreach (var key in PressedCodes)
+                runesCount[keyCodeToRune[key]]--;
+            uiUpdater.UpdateRuneCount(runesCount);
             switch (magika.Obj.name)
             {
                 case "Heal":
@@ -180,7 +178,7 @@ public class MagicBook : MonoBehaviour
                 }
             }
         }
-        pressedCodes.Clear();
+        PressedCodes.Clear();
         uiHelp.UpdateHelp();
     }
 

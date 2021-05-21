@@ -13,7 +13,7 @@ public class Platform : MonoBehaviour
     private bool floating = true;
     private Vector3 startPos;
     [SerializeField]
-    public float FloatSpeed = 0.001f;
+    public float floatSpeed = 0.001f;
 
     void Start()
     {
@@ -25,9 +25,9 @@ public class Platform : MonoBehaviour
     {
         if (!isFreeze) return;
         if (floating)
-            transform.position += Vector3.up * FloatSpeed;
+            transform.position += Vector3.up * floatSpeed;
         else
-            transform.position += Vector3.down * FloatSpeed;
+            transform.position += Vector3.down * floatSpeed;
         if ((transform.position - startPos).y > 0.1)
             floating = false;
         else if ((transform.position - startPos).y < -0.1)
@@ -37,7 +37,8 @@ public class Platform : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         var player = other.gameObject.GetComponent<SimplePlayerController>();
-        if (!isLeaf || player == null) return;
+        if (!isLeaf || player == null) 
+            return;
         if (curTouch < maxTouch)
             curTouch++;
         else

@@ -9,6 +9,7 @@ public class Sus_Move : MonoBehaviour
     // Start is called before the first frame update
     public Vector3 target;
     public float acceleration = 50f;
+    
     void Start()
     {
         target = gameObject.transform.position;
@@ -17,7 +18,8 @@ public class Sus_Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + (target - transform.position ).normalized * acceleration * Time.deltaTime;
+        var x = (target - transform.position).normalized;
+        transform.position += x * acceleration * Time.deltaTime;
     }
 
 }

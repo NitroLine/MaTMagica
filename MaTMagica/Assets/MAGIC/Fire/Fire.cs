@@ -8,6 +8,7 @@ using Assets.MAGIC;
 
 public class Fire : MonoBehaviour
 {
+    //TODO удалить
     // Start is called before the first frame update
     void Start()
     {
