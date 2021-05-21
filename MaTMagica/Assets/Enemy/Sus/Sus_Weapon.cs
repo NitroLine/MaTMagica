@@ -19,7 +19,8 @@ public class Sus_Weapon : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         var player = other.gameObject.GetComponent<SimplePlayerController>();
-        if (player == null) return;
+        if (player == null) 
+            return;
         player.isInFire = true;
     }
 }

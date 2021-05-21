@@ -17,6 +17,8 @@ public class Flus_Move : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.MoveTowards(
-            transform.position, target, acceleration*Time.deltaTime);
+            transform.position, 
+            target, 
+            acceleration*Time.deltaTime);
     }
 }

@@ -11,12 +11,13 @@ public class MagicHelper : MonoBehaviour
 
     public MagicBook magicBook;
     public UI_updater uiUpdater;
+    
     void Start()
     {
         
     }
 
-    private int BinarySearch(KeyCombination combination, KeyCode item)
+    public int BinarySearch(KeyCombination combination, KeyCode item)
     {
         var temp = combination.Combinations;
         temp.Sort();
@@ -48,8 +49,9 @@ public class MagicHelper : MonoBehaviour
     // Update is called once per frame
     public void UpdateHelp()
     {
-        var curCodes = magicBook.PressedCodes;
-        if (curCodes.Count == 0) return;
+        var curCodes = magicBook.pressedCodes;
+        if (curCodes.Count == 0) 
+            return;
         var possibleMagiks = magicBook
             .KeyCombinationsToMagik
             .Keys

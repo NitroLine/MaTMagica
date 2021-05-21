@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Freeze : MonoBehaviour
 {
+    //TODO убрать
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,7 @@ public class Freeze : MonoBehaviour
     {
         
     }
+    
     private void OnTriggerStay2D(Collider2D other)
     {
         Debug.Log("Inside freeze");

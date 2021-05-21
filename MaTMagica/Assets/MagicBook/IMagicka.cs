@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Assets.MAGIC
 {
-    //TODO удалить
+    //TODO убрать
     interface IMagicka
     {
 

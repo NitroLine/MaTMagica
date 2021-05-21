@@ -10,12 +10,11 @@ public class Scroll : MonoBehaviour
     private bool floating = true;
     private Vector3 startPos;
     [SerializeField]
-    public float floatSpeed = 0.005f;
+    public float FloatSpeed = 0.005f;
     [SerializeField]
-    public Rune runeType;
+    public Rune RuneType;
     [SerializeField]
-    public int runesCount;
-    
+    public int RuneCount = 0;
     void Start()
     {
         startPos = transform.position;
@@ -25,9 +24,9 @@ public class Scroll : MonoBehaviour
     void Update()
     {
         if (floating)
-            transform.position += Vector3.up * floatSpeed;
+            transform.position += Vector3.up * FloatSpeed;
         else
-            transform.position += Vector3.down * floatSpeed;
+            transform.position += Vector3.down * FloatSpeed;
         if ((transform.position - startPos).y > 0.5)
             floating = false;
         else if ((transform.position - startPos).y < -0.5)
@@ -37,7 +36,7 @@ public class Scroll : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         var spellBook = other.gameObject.GetComponent<MagicBook>();
-        spellBook?.AddRunes(runeType, runesCount);
+        spellBook?.AddRunes(RuneType,RuneCount);
         if (spellBook != null)
             Destroy(gameObject);
     }

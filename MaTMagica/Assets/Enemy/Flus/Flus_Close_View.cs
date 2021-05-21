@@ -22,7 +22,6 @@ public class Flus_Close_View : MonoBehaviour
         var player = other.gameObject.GetComponent<SimplePlayerController>();
         if (player == null) 
             return;
-        gameObject.GetComponentInParent<Flus_Move>().target = 
-            player.transform.position - Vector3.up * 2;
+        gameObject.GetComponentInParent<Flus_Move>().target = player.transform.position - Vector3.up * 2;
     }
 }

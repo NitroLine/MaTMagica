@@ -9,7 +9,6 @@ public class Sus_Move : MonoBehaviour
     // Start is called before the first frame update
     public Vector3 target;
     public float acceleration = 50f;
-    
     void Start()
     {
         target = gameObject.transform.position;

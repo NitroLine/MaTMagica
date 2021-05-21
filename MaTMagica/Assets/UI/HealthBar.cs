@@ -23,7 +23,9 @@ public class HealthBar : MonoBehaviour
 
         UpdateUI();
     }
-    
+
+    public static float currentValue => current;
+
     void Update()
     {
         if (current < 0) current = 0;
@@ -33,9 +35,9 @@ public class HealthBar : MonoBehaviour
 
     void UpdateUI()
     {
-        var rect = slider.GetComponent<RectTransform>();
+        RectTransform rect = slider.GetComponent<RectTransform>();
 
-        var rectDeltaX = Screen.width / width;
+        int rectDeltaX = Screen.width / width;
         float rectPosX = 0;
 
         if (isRight)
@@ -50,9 +52,7 @@ public class HealthBar : MonoBehaviour
         }
 
         rect.sizeDelta = new Vector2(rectDeltaX, rect.sizeDelta.y);
-        var rectPosY = rect.position.y;
-        var rectPosZ = rect.position.z;
-        rect.position = new Vector3(rectPosX, rectPosY, rectPosZ);
+        rect.position = new Vector3(rectPosX, rect.position.y, rect.position.z);
     }
 
     public static void AdjustCurrentValue(float adjust)

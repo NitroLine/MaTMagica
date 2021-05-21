@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class FireBall : MonoBehaviour
 {
+    //TODO убрать
     // Start is called before the first frame update
     void Start()
     {
