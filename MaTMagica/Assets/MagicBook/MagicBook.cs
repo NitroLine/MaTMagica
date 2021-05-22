@@ -156,7 +156,7 @@ public class MagicBook : MonoBehaviour
                 case "Ball" :
                 {
                     var pos = player.gameObject.transform.position;
-                    pos.z = 6f;
+                    pos.z = -1f;
                     pos.x += player.Direction * 2f;
                     pos.y += 2f;
                     var rotate = Quaternion.identity;
@@ -174,7 +174,7 @@ public class MagicBook : MonoBehaviour
                 case "JumpPlatform":
                 {
                     var pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                    pos.z = 6f;
+                    pos.z = -1f;
                     var rotate = Quaternion.identity;
                     if (magika.Power == 0)
                         rotate.z += 1f;
