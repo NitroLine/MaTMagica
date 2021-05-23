@@ -21,6 +21,6 @@ public class Sus_Weapon : MonoBehaviour
         var player = other.gameObject.GetComponent<SimplePlayerController>();
         if (player == null) 
             return;
-        player.isInFire = true;
+        player.isDamaged = true;
     }
 }

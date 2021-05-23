@@ -1,5 +1,4 @@
 ﻿using System;
-using UnityEditor.U2D.Animation;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -27,7 +26,7 @@ namespace ClearSky
                 }
             }
         }
-        public bool isInFire = false;
+        public bool isDamaged = false;
         private Rigidbody2D rb;
         private Animator anim;
         Vector3 movement;
@@ -37,7 +36,6 @@ namespace ClearSky
         public bool isAlive => alive;
 
         public int Direction => direction;
-        // Start is called before the first frame update
         void Start()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -46,7 +44,6 @@ namespace ClearSky
 
         private void FixedUpdate()
         {
-            Restart();
             RestartLevel();
             if (alive)
             {
@@ -56,11 +53,9 @@ namespace ClearSky
 
         private void Update()
         {
-            if (alive)
-            {
-                Jump();
-                InFire();
-            }
+            if (!alive) return;
+            Jump();
+            HurtMe();
         }
         private void OnTriggerEnter2D(Collider2D other)
         {
@@ -76,21 +71,18 @@ namespace ClearSky
             }
         }
 
-        private void InFire()
+        private void HurtMe()
         {
-            if (!isInFire) return;
+            if (!isDamaged) return;
             anim.SetTrigger("hurt");
-            if (direction == 1)
-                rb.AddForce(new Vector2(-5f, 1f), ForceMode2D.Impulse);
-            else
-                rb.AddForce(new Vector2(5f, 1f), ForceMode2D.Impulse);
+            rb.AddForce(direction == 1 ? new Vector2(-5f, 1f) : new Vector2(5f, 1f), ForceMode2D.Impulse);
             Health -= 1;
-            isInFire = false;
+            isDamaged = false;
         }
 
         void Run()
         {
-            Vector3 moveVelocity = Vector3.zero;
+            var moveVelocity = Vector3.zero;
             anim.SetBool("isRun", false);
 
             if (Input.GetAxisRaw("Horizontal") < 0)
@@ -139,7 +131,7 @@ namespace ClearSky
 
             rb.velocity = Vector2.zero;
 
-            Vector2 jumpVelocity = new Vector2(0, jumpPower);
+            var jumpVelocity = new Vector2(0, jumpPower);
             rb.AddForce(jumpVelocity, ForceMode2D.Impulse);
             isJumping = false;
         }
@@ -152,10 +144,7 @@ namespace ClearSky
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 anim.SetTrigger("hurt");
-                if (direction == 1)
-                    rb.AddForce(new Vector2(-5f, 1f), ForceMode2D.Impulse);
-                else
-                    rb.AddForce(new Vector2(5f, 1f), ForceMode2D.Impulse);
+                rb.AddForce(direction == 1 ? new Vector2(-5f, 1f) : new Vector2(5f, 1f), ForceMode2D.Impulse);
             }
         }
         void Die()

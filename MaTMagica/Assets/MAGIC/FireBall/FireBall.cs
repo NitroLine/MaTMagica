@@ -22,7 +22,7 @@ public class FireBall : MonoBehaviour
     {
         var t = other.gameObject.GetComponent<SimplePlayerController>();
         if (!(t is null))
-            t.isInFire = true;
+            t.isDamaged = true;
         Destroy(gameObject);
     }
 }
