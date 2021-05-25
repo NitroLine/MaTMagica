@@ -24,6 +24,11 @@ public class MagicBook : MonoBehaviour
     public int MaxSpellLength;
     public int StartRunesCount = 10;
 
+    public AudioClip pickAudioClip;
+    public AudioClip doMagicClip;
+    public AudioClip failMagicClip;
+    public AudioClip noRunesClip;
+    private AudioSource audio;
     public readonly List<KeyCode> pressedCodes = new List<KeyCode>();
     public readonly Dictionary<KeyCombination, Magika> KeyCombinationsToMagik = 
         new Dictionary<KeyCombination, Magika>();
@@ -40,6 +45,7 @@ public class MagicBook : MonoBehaviour
     
     void Start()
     {
+        audio = gameObject.GetComponent<AudioSource>();
         player = gameObject.GetComponent<SimplePlayerController>();
         KeyCombinationsToMagik[GetComb(KeyCode.Q)] =
             new Magika(ball, "Камень",0);
@@ -90,44 +96,79 @@ public class MagicBook : MonoBehaviour
         if (Input.anyKey && pressedCodes.Count < MaxSpellLength && player.isAlive)
         {
             
-            if (Input.GetKeyDown(KeyCode.Q) 
-                && RunesCount[keyCodeToRune[KeyCode.Q]] > 0)
+            if (Input.GetKeyDown(KeyCode.Q))
             {
-                pressedCodes.Add(KeyCode.Q);
-                uiUpdater.AddImageOnButton(KeyCode.Q);
-                uiHelp.UpdateHelp();
+                if (RunesCount[keyCodeToRune[KeyCode.Q]] > 0)
+                {
+                    pressedCodes.Add(KeyCode.Q);
+                    uiUpdater.AddImageOnButton(KeyCode.Q);
+                    uiHelp.UpdateHelp();
+                    audio.PlayOneShot(pickAudioClip);
+                }
+                else
+                {
+                    audio.PlayOneShot(noRunesClip);
+                }
             }
 
-            if (Input.GetKeyDown(KeyCode.E) 
-                && RunesCount[keyCodeToRune[KeyCode.E]] > 0)
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                pressedCodes.Add(KeyCode.E);
-                uiUpdater.AddImageOnButton(KeyCode.E);
-                uiHelp.UpdateHelp();
+                if (RunesCount[keyCodeToRune[KeyCode.E]] > 0)
+                {
+                    pressedCodes.Add(KeyCode.E);
+                    uiUpdater.AddImageOnButton(KeyCode.E);
+                    uiHelp.UpdateHelp();
+                    audio.PlayOneShot(pickAudioClip);
+                }
+                else
+                {
+                    audio.PlayOneShot(noRunesClip);
+                }
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha1) 
-                && RunesCount[keyCodeToRune[KeyCode.Alpha1]] > 0)
+            if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                pressedCodes.Add(KeyCode.Alpha1);
-                uiUpdater.AddImageOnButton(KeyCode.Alpha1);
-                uiHelp.UpdateHelp();
+                if (RunesCount[keyCodeToRune[KeyCode.Alpha1]] > 0)
+                {
+                    pressedCodes.Add(KeyCode.Alpha1);
+                    uiUpdater.AddImageOnButton(KeyCode.Alpha1);
+                    uiHelp.UpdateHelp();
+                    audio.PlayOneShot(pickAudioClip);
+                }
+                else
+                {
+                    audio.PlayOneShot(noRunesClip);
+                }
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha2) 
-                && RunesCount[keyCodeToRune[KeyCode.Alpha2]] > 0)
+            if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                pressedCodes.Add(KeyCode.Alpha2);
-                uiUpdater.AddImageOnButton(KeyCode.Alpha2);
-                uiHelp.UpdateHelp();
+                if (RunesCount[keyCodeToRune[KeyCode.Alpha2]] > 0)
+                {
+                    pressedCodes.Add(KeyCode.Alpha2);
+                    uiUpdater.AddImageOnButton(KeyCode.Alpha2);
+                    uiHelp.UpdateHelp();
+                    audio.PlayOneShot(pickAudioClip);
+                }
+                else
+                {
+                    audio.PlayOneShot(noRunesClip);
+                }
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha3) 
-                && RunesCount[keyCodeToRune[KeyCode.Alpha3]] > 0)
+            if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                pressedCodes.Add(KeyCode.Alpha3);
-                uiUpdater.AddImageOnButton(KeyCode.Alpha3);
-                uiHelp.UpdateHelp();
+                if (RunesCount[keyCodeToRune[KeyCode.Alpha3]] > 0)
+                {
+                    pressedCodes.Add(KeyCode.Alpha3);
+                    uiUpdater.AddImageOnButton(KeyCode.Alpha3);
+                    uiHelp.UpdateHelp();
+                    audio.PlayOneShot(pickAudioClip);
+                }
+                else
+                {
+                    audio.PlayOneShot(noRunesClip);
+                }
             }
         }
 
@@ -140,6 +181,7 @@ public class MagicBook : MonoBehaviour
             var magika = KeyCombinationsToMagik[GetCombFromList(pressedCodes)];
             foreach (var key in pressedCodes)
                 RunesCount[keyCodeToRune[key]]--;
+            audio.PlayOneShot(doMagicClip);
             uiUpdater.UpdateRuneCount(RunesCount);
             switch (magika.Obj.name)
             {
@@ -182,6 +224,10 @@ public class MagicBook : MonoBehaviour
                     break;
                 }
             }
+        }
+        else if (pressedCodes.Count > 0)
+        {
+            audio.PlayOneShot(failMagicClip);
         }
         pressedCodes.Clear();
         uiHelp.UpdateHelp();
