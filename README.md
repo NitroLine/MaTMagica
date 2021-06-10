@@ -3,7 +3,7 @@
  
 ![alt text](https://i.ibb.co/Jr3nn9H/logo.png)
 ### Genre
- - Physics puzzle
+ - Physics puzzle platformer 
 ### Style
  - Anime
 ### About
