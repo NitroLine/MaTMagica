@@ -10,6 +10,6 @@
  - About mathematical engineering school of magic
 ### Feature
  - Сreating spells for passing levels from runes combination with their limited number 
-
- 
+### Builded versions
+ - [Realses](https://drive.google.com/drive/folders/1tFdbNRNRLDLWP7n4wDUtyj5IsuZ4UpsQ?usp=sharing)
 
